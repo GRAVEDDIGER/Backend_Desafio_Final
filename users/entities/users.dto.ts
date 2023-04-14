@@ -1,8 +1,8 @@
 import { Prisma } from "@prisma/client";
-export class UsersDto implements Omit<Prisma.UsersCreateInput,"id"> {
+export class CreateUsersDto implements Omit<Prisma.UsersCreateInput,"id"> {
     name!: string;
     username!: string;
-    hash!: string;
+    password!: string;
     phoneNumber!: number;
     address!: Prisma.AddressCreateNestedOneWithoutUsersInput;
 }
