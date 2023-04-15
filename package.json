@@ -2,9 +2,10 @@
   "name": "backend_desafiofinal",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.module.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "npm install & npx prisma generate",
+    "start:dev":"ts-node-dev ."
   },
   "keywords": [],
   "author": "",

@@ -14,7 +14,7 @@ public hash:string
         public lastName:string,
         public phoneNumber:number,
         public address:Address,
-        public password:string)
+        public password?:string)
         {if (this.password !==undefined) this.hash = bcrypt.hashSync(this.password,bcrypt.genSaltSync(10))
         else this.hash=""
         }
