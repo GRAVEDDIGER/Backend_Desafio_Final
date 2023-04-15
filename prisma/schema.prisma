@@ -10,41 +10,54 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Address {
-  id      String  @id @default(auto()) @map("_id") @db.ObjectId
+type Address {
   street  String
   number  Int
   city    String
   zipCode String
-  Users   Users[]
 }
 
 model Users {
-  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  id          String     @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
   name        String
   lastName    String
-  username    String  @unique
+  username    String     @unique
   hash        String
   phoneNumber Int
-  address     Address @relation(fields: [addressId], references: [id])
-  addressId   String  @db.ObjectId
+  address     Address
+  messages    messages[]
   Carts       Carts[]
 }
 
 model Products {
-  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
   name        String
   description String
   stock       Int
   price       Int
   rate        Int
-  Carts       Carts?  @relation(fields: [cartsId], references: [id])
-  cartsId     String? @db.ObjectId
+  Carts       Carts?   @relation(fields: [cartsId], references: [id])
+  cartsId     String?  @db.ObjectId
 }
 
 model Carts {
-  id       String     @id @default(auto()) @map("_id") @db.ObjectId
-  user     Users      @relation(fields: [usersId], references: [id])
-  usersId  String     @db.ObjectId
-  products Products[]
+  id        String     @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  user      Users      @relation(fields: [usersId], references: [id])
+  usersId   String     @db.ObjectId
+  products  Products[]
+}
+
+model messages {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  usersId   String   @db.ObjectId
+  author    Users    @relation(fields: [usersId], references: [id])
+  message   String
 }

@@ -1,8 +1,11 @@
 import {Prisma} from "@prisma/client"
-export class ProductDto implements Omit<Prisma.ProductsCreateInput,"id"> {
-    name!: string;
-    description!: string;
-    stock!: number;
-    rate!: number;
-    price!: number;
+export class CreateProductDto implements Omit<Prisma.ProductsCreateInput,"id"> {
+    constructor(
+        public name:string,
+        public description:string,
+        public stock:number,
+        public rate:number,
+        public price:number, 
+        public category:string){}
+;
 }
