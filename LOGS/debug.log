@@ -1,0 +1,404 @@
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    level: 'error',
+    function: 'UsersService.create()',
+    error: PrismaClientInitializationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/users/users.service.ts:15:44
+    
+      12 public create = async (createUserDto: CreateUsersDto): Promise<IResponse> => {
+      13   if ('password' in createUserDto) delete createUserDto?.password
+      14   try {
+    → 15     const response = await this.prisma.create(
+    Error in connector: Error creating a database connection. (An error occurred during DNS resolution: no record found for name: _mongodb._tcp.dcsweb.snm3hyr.mongodb.net.fibertel.com.ar. type: SRV class: IN)
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6750)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:3087
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:3294
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10748)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      clientVersion: '4.12.0',
+      errorCode: undefined
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    level: 'error',
+    function: 'UsersService.create()',
+    error: PrismaClientInitializationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/users/users.service.ts:15:44
+    
+      12 public create = async (createUserDto: CreateUsersDto): Promise<IResponse> => {
+      13   if ('password' in createUserDto) delete createUserDto?.password
+      14   try {
+    → 15     const response = await this.prisma.create(
+    Error in connector: Error creating a database connection. (An error occurred during DNS resolution: no record found for name: _mongodb._tcp.dcsweb.snm3hyr.mongodb.net.fibertel.com.ar. type: SRV class: IN)
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6750)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:3087
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:3294
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10748)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      clientVersion: '4.12.0',
+      errorCode: undefined
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'ProductController.CreateProductDto',
+    dto: {
+      name: 'The Meolindir',
+      description: 'Thanos underwere',
+      stock: 1225,
+      rate: 5,
+      price: 152,
+      category: 'Toxic Waste'
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    level: 'error',
+    function: 'UsersService.create()',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/users/users.service.ts:15:44
+    
+      12 public create = async (createUserDto: CreateUsersDto): Promise<IResponse> => {
+      13   if ('password' in createUserDto) delete createUserDto?.password
+      14   try {
+    → 15     const response = await this.prisma.create(
+    Unique constraint failed on the constraint: `Users_username_key`
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6477)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at fn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      code: 'P2002',
+      clientVersion: '4.12.0',
+      meta: { target: 'Users_username_key' }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'UserController.findById',
+    response: ResponseObject {
+      error: null,
+      ok: true,
+      response: {
+        id: '643d374cf67aa9b49efb87c9',
+        createdAt: 2023-04-17T12:10:52.587Z,
+        updatedAt: 2023-04-17T12:39:10.777Z,
+        name: 'string',
+        lastName: 'string',
+        username: 'strin',
+        hash: '$2b$10$ww2NG1qG5N5jnUQpVFWRPOtr/nt2WxOn441MVhxvxEJyIknr1jUry',
+        phoneNumber: 223,
+        address: {
+          street: 'String',
+          number: 222,
+          city: 'String',
+          zipCode: 'String'
+        },
+        Carts: []
+      }
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    level: 'error',
+    function: 'UsersService.listUsers',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findMany()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/users/users.service.ts:57:44
+    
+      54 },
+      55 public listUsers = async () => {
+      56   try {
+    → 57     const response = await this.prisma.findMany(
+    Raw query failed. Code: `unknown`. Message: `failed to lookup address information: Name or service not known`
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6477)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at fn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      code: 'P2010',
+      clientVersion: '4.12.0',
+      meta: {
+        code: 'unknown',
+        message: 'failed to lookup address information: Name or service not known'
+      }
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'UserController.deleteUser',
+    response: ResponseObject {
+      error: null,
+      ok: true,
+      response: {
+        id: '643d36dcf67aa9b49efb87c5',
+        createdAt: 2023-04-17T12:08:59.934Z,
+        updatedAt: 2023-04-17T12:08:59.934Z,
+        name: 'string',
+        lastName: 'string',
+        username: 'string',
+        hash: '$2b$10$ww2NG1qG5N5jnUQpVFWRPOtr/nt2WxOn441MVhxvxEJyIknr1jUry',
+        phoneNumber: 22,
+        address: {
+          street: 'String',
+          number: 222,
+          city: 'String',
+          zipCode: 'String'
+        },
+        Carts: []
+      }
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    level: 'error',
+    function: 'UsersService.deleteUser',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.delete()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/users/users.service.ts:66:50
+    
+      63 },
+      64 public deleteUser = async (id: string): Promise<IResponse> => {
+      65   try {
+    → 66     const response = await this.prisma.delete(
+    An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6477)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at fn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      code: 'P2025',
+      clientVersion: '4.12.0',
+      meta: { cause: 'Record to delete does not exist.' }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'UserController.deleteUser',
+    response: ResponseObject {
+      error: PrismaClientKnownRequestError: 
+      Invalid `this.prisma.delete()` invocation in
+      /run/media/adrianabadin/code/backend_DesafioFinal/users/users.service.ts:66:50
+      
+        63 },
+        64 public deleteUser = async (id: string): Promise<IResponse> => {
+        65   try {
+      → 66     const response = await this.prisma.delete(
+      An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.
+          at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6477)
+          at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+          at fn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5786)
+          at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+        code: 'P2025',
+        clientVersion: '4.12.0',
+        meta: { cause: 'Record to delete does not exist.' }
+      },
+      ok: false,
+      response: null
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'ProductService.updateProduct',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.update()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:24:38
+    
+      21 public updateProduct = async (updateProductDto: Partial<CreateProductDto>, id: string) => {
+      22   let response: any
+      23   try {
+    → 24     response = await this.prisma.update(
+    An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6477)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at fn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      code: 'P2025',
+      clientVersion: '4.12.0',
+      meta: { cause: 'Record to update not found.' }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductController.CreateProductDto',
+    dto: {
+      name: 'Sex Toy',
+      description: 'Thanos underwere',
+      stock: 1225,
+      rate: 5,
+      price: 152,
+      category: 'Toxic Waste'
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'ProductService.productById',
+    error: NotFoundError [PrismaClientKnownRequestError]: No Products found
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6701
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2025',
+      clientVersion: '4.12.0',
+      meta: undefined
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: NotFoundError [PrismaClientKnownRequestError]: No Products found
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6701
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2025',
+      clientVersion: '4.12.0',
+      meta: undefined
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'ProductService.productById',
+    error: NotFoundError [PrismaClientKnownRequestError]: No Products found
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6701
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2025',
+      clientVersion: '4.12.0',
+      meta: undefined
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.updateProduct',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.update()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:24:38
+    
+      21 public updateProduct = async (updateProductDto: Partial<CreateProductDto>, id: string) => {
+      22   let response: any
+      23   try {
+    → 24     response = await this.prisma.update(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "643c612b10e9de8675b1171", length 23.
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6477)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at fn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      code: 'P2023',
+      clientVersion: '4.12.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "643c612b10e9de8675b1171", length 23.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.updateProduct',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.update()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:24:38
+    
+      21 public updateProduct = async (updateProductDto: Partial<CreateProductDto>, id: string) => {
+      22   let response: any
+      23   try {
+    → 24     response = await this.prisma.update(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "643c612b10e9de8675b1170", length 23.
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6477)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at fn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      code: 'P2023',
+      clientVersion: '4.12.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "643c612b10e9de8675b1170", length 23.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.updateProduct',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.update()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:24:38
+    
+      21 public updateProduct = async (updateProductDto: Partial<CreateProductDto>, id: string) => {
+      22   let response: any
+      23   try {
+    → 24     response = await this.prisma.update(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "643c612b10e9de8675b1173", length 23.
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6477)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at fn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      code: 'P2023',
+      clientVersion: '4.12.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "643c612b10e9de8675b1173", length 23.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.updateProduct',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.update()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:24:38
+    
+      21 public updateProduct = async (updateProductDto: Partial<CreateProductDto>, id: string) => {
+      22   let response: any
+      23   try {
+    → 24     response = await this.prisma.update(
+    An operation failed because it depends on one or more records that were required but not found. Record to update not found.
+        at fn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:6477)
+        at fn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5907)
+        at fn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:174:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:177:10477) {
+      code: 'P2025',
+      clientVersion: '4.12.0',
+      meta: { cause: 'Record to update not found.' }
+    }
+  },
+  level: 'error'
+}

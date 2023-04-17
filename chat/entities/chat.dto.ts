@@ -1,8 +1,7 @@
-import { Prisma } from "@prisma/client";
+import { Prisma } from '@prisma/client'
 export class CreateChatDto implements Prisma.messagesCreateInput {
-constructor(
-    public message:string,
-    public author:Prisma.UsersCreateNestedOneWithoutMessagesInput
-)
-{}
-} 
+  constructor (
+    public message: string,
+    public author: Prisma.UsersCreateNestedOneWithoutMessagesInput
+  ) {}
+}

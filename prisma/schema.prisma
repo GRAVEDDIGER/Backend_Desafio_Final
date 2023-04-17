@@ -17,18 +17,42 @@ type Address {
   zipCode String
 }
 
-model Users {
-  id          String     @id @default(auto()) @map("_id") @db.ObjectId
-  createdAt   DateTime   @default(now())
-  updatedAt   DateTime   @updatedAt
+type ProductType {
+  id          String
+  name        String
+  description String
+  quantity    Int
+  price       Int
+}
+
+type CartsType {
+  id        String
+  createdAt DateTime
+  updatedAt DateTime
+  user      UserType
+  products  ProductType[]
+}
+
+type UserType {
   name        String
   lastName    String
-  username    String     @unique
+  username    String
+  phoneNumber Int
+  address     Address
+  id          String
+}
+
+model Users {
+  id          String      @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  name        String
+  lastName    String
+  username    String      @unique
   hash        String
   phoneNumber Int
   address     Address
-  messages    messages[]
-  Carts       Carts[]
+  Carts       CartsType[]
 }
 
 model Products {
@@ -40,24 +64,31 @@ model Products {
   stock       Int
   price       Int
   rate        Int
-  Carts       Carts?   @relation(fields: [cartsId], references: [id])
-  cartsId     String?  @db.ObjectId
+  category    String
 }
 
 model Carts {
-  id        String     @id @default(auto()) @map("_id") @db.ObjectId
-  createdAt DateTime   @default(now())
-  updatedAt DateTime   @updatedAt
-  user      Users      @relation(fields: [usersId], references: [id])
-  usersId   String     @db.ObjectId
-  products  Products[]
+  id        String        @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+  usersId   String        @db.ObjectId
+  products  ProductType[]
 }
 
 model messages {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  usersId   String   @db.ObjectId
-  author    Users    @relation(fields: [usersId], references: [id])
+  author    UserType
   message   String
+}
+
+model sales {
+  id                String    @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  cart              CartsType
+  user              UserType
+  totalWithoutTaxes Int
+  totalWithTaxes    Int
 }
