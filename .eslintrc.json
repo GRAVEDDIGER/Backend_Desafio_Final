@@ -3,7 +3,7 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "./node_modules/ts-standard/eslintrc.json",//"standard-with-typescript",
+    "extends": "./node_modules/ts-standard/eslintrc.json",
     "overrides": [
     ],
     "parserOptions": {

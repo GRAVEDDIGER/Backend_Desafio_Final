@@ -1,5 +1,5 @@
 export interface IResponse {
-    error:any
-    ok:boolean
-    response:any
+  error: any
+  ok: boolean
+  response: any
 }

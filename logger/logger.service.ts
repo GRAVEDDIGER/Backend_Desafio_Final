@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 import fs from 'fs'
 import path from 'path'
 dotenv.config()
-const logPath = process.env.LOG_DIRECTORY || ''
+const logPath = process.env.LOG_DIRECTORY ?? ''
 
 if (logPath !== undefined && !fs.existsSync(logPath)) fs.mkdirSync(logPath)
 export const logger = winston.createLogger({
