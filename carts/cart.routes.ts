@@ -4,3 +4,5 @@ const cartController = new CartController()
 export const cartRouter = Router()
 
 cartRouter.post('/', cartController.createCart)
+cartRouter.put('/:id', cartController.updateCart)
+cartRouter.delete('/:id', cartController.deleteCart)

@@ -19,6 +19,35 @@ export class CartController {
         })
         res.status(400).send(error)
       })
+    },
+    public updateCart = (req: Request, res: Response) => {
+      const { id } = req.body
+      const dto: CreateCartDto = req.body
+      this.cartService.updateCart(dto, id)
+        .then((response: IResponse) => {
+          if (response.ok) res.status(200).send(response)
+          else res.status(400).send(response)
+        })
+        .catch((error: any) => {
+          logger.error({
+            function: 'CartController.updateCart',
+            error
+          })
+          res.status(400).send(error)
+        })
+    },
+    public deleteCart = (req: Request, res: Response) => {
+      const { id } = req.body
+      this.cartService.deleteCart(id).then((response: IResponse) => {
+        if (response.ok) res.status(200).send(response)
+        else res.status(400).send(response)
+      })
+        .catch((error: any) => {
+          logger.error({
+            function: 'CartController.deleteCart',
+            error
+          })
+        })
     }
   ) {
     // SINGLETON PATTERN
