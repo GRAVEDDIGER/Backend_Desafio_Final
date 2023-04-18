@@ -19,8 +19,22 @@ export class CartService {
         })
         return new ResponseObject(error, false, null)
       }
+    },
+    public updateCart = async (updateDto: CreateCartDto, id: string) => {
+      let response: any
+      try {
+        response = this.prisma.update({ where: { id }, data: updateDto })
+        return new ResponseObject(null, true, response)
+      } catch (error) {
+        logger.error({
+          function: 'CartService.updateCart',
+          error
+        })
+        return new ResponseObject(error, false, null)
+      }
     }
   ) {
+    // SINGLETON PATTERN
     if (CartService.Instance !== undefined) return CartService.Instance
     else {
       CartService.Instance = this

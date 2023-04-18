@@ -21,6 +21,7 @@ export class CartController {
       })
     }
   ) {
+    // SINGLETON PATTERN
     if (CartController.Instance !== undefined) return CartController.Instance
     else CartController.Instance = this
     return this
