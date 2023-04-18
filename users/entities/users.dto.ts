@@ -1,4 +1,4 @@
-import { Prisma } from '@prisma/client'
+import { type Prisma } from '@prisma/client'
 import bcrypt from 'bcrypt'
 interface Address {
   street: string
@@ -6,6 +6,7 @@ interface Address {
   city: string
   zipCode: string
 }
+
 export class CreateUsersDto implements Omit<Omit<Prisma.UsersCreateInput, 'id'>, 'hash'> {
   public hash: string
   constructor (
