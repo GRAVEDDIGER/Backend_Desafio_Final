@@ -42,7 +42,7 @@ export class ProductService {
       }
     },
     public listProducts = async () => {
-      let response: any
+      let response: any[]
       try {
         response = await this.prisma.findMany()
         return new ResponseObject(null, true, response)

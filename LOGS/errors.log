@@ -389,3 +389,301 @@
   },
   level: 'error'
 }
+{
+  message: {
+    function: 'CartService.createCart',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:13:38
+    
+      10 public createCart = async (createCartDto: CreateCartDto) => {
+      11   let response: any
+      12   try {
+    → 13     response = await this.prisma.create({
+               data: {
+                 user: {
+                   name: 'String',
+                   lastName: 'String',
+                   username: 'String',
+                   phoneNumber: 111,
+                   address: {
+                     street: 'String',
+                     number: 111,
+                     city: 'String',
+                     zipCode: 'String'
+                   },
+             +     id: String
+                 },
+                 products: {
+                   id: 'String',
+                   name: 'String',
+                   description: 'String',
+                   quantity: 2,
+                   price: 125,
+                   stock: 122,
+                   rate: 3,
+                   category: 'String'
+                 }
+               }
+             })
+    
+    Argument id for data.user.id is missing.
+    
+    Note: Lines with + are required
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.updateCart',
+    error: TypeError: Cannot read properties of undefined (reading 'fields')
+        at applyFluent (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5095)
+        at Object.get (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5336)
+        at JSON.stringify (<anonymous>)
+        at stringify (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:1150:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:271:14)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:30:44
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.updateCart',
+    error: TypeError: Cannot read properties of undefined (reading 'fields')
+        at applyFluent (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5095)
+        at Object.get (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5336)
+        at JSON.stringify (<anonymous>)
+        at stringify (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:1150:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:271:14)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:33:44
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.updateCart',
+    error: TypeError: Cannot read properties of undefined (reading 'fields')
+        at applyFluent (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5095)
+        at Object.get (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5336)
+        at JSON.stringify (<anonymous>)
+        at stringify (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:1150:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:271:14)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:33:44
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.updateCart',
+    error: TypeError: Cannot read properties of undefined (reading 'fields')
+        at applyFluent (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5095)
+        at Object.get (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5336)
+        at JSON.stringify (<anonymous>)
+        at stringify (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:1150:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:271:14)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:34:44
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.updateCart',
+    error: TypeError: Cannot read properties of undefined (reading 'fields')
+        at applyFluent (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5095)
+        at Object.get (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:5336)
+        at JSON.stringify (<anonymous>)
+        at stringify (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:1150:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:271:14)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:35:44
+        at processTicksAndRejections (node:internal/process/task_queues:95:5)
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.deleteCart',
+    error: PrismaClientValidationError: 
+    Invalid `prisma.carts.delete()` invocation:
+    
+    {
+      where: {
+    ?   id?: String
+      }
+    }
+    
+    Argument where of type CartsWhereUniqueInput needs at least one argument. Available args are listed in green.
+    
+    Note: Lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.listCarts',
+    error: Error: Cannot set headers after they are sent to the client
+        at new NodeError (node:internal/errors:399:5)
+        at ServerResponse.setHeader (node:_http_outgoing:663:11)
+        at ServerResponse.header (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:794:10)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:174:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:278:15)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:59:44 {
+      code: 'ERR_HTTP_HEADERS_SENT'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.listCarts',
+    error: Error: Cannot set headers after they are sent to the client
+        at new NodeError (node:internal/errors:399:5)
+        at ServerResponse.setHeader (node:_http_outgoing:663:11)
+        at ServerResponse.header (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:794:10)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:174:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:278:15)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:59:44 {
+      code: 'ERR_HTTP_HEADERS_SENT'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.listCarts',
+    error: Error: Cannot set headers after they are sent to the client
+        at new NodeError (node:internal/errors:399:5)
+        at ServerResponse.setHeader (node:_http_outgoing:663:11)
+        at ServerResponse.header (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:794:10)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:174:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:278:15)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:59:44 {
+      code: 'ERR_HTTP_HEADERS_SENT'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.listCarts',
+    error: Error: Cannot set headers after they are sent to the client
+        at new NodeError (node:internal/errors:399:5)
+        at ServerResponse.setHeader (node:_http_outgoing:663:11)
+        at ServerResponse.header (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:794:10)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:174:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:278:15)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:60:44 {
+      code: 'ERR_HTTP_HEADERS_SENT'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.listCarts',
+    error: Error: Cannot set headers after they are sent to the client
+        at new NodeError (node:internal/errors:399:5)
+        at ServerResponse.setHeader (node:_http_outgoing:663:11)
+        at ServerResponse.header (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:794:10)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:174:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:278:15)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:60:44 {
+      code: 'ERR_HTTP_HEADERS_SENT'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.listCarts',
+    error: Error: Cannot set headers after they are sent to the client
+        at new NodeError (node:internal/errors:399:5)
+        at ServerResponse.setHeader (node:_http_outgoing:663:11)
+        at ServerResponse.header (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:794:10)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:174:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:278:15)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:60:44 {
+      code: 'ERR_HTTP_HEADERS_SENT'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartController.listCarts',
+    error: Error: Cannot set headers after they are sent to the client
+        at new NodeError (node:internal/errors:399:5)
+        at ServerResponse.setHeader (node:_http_outgoing:663:11)
+        at ServerResponse.header (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:794:10)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:174:12)
+        at ServerResponse.json (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:278:15)
+        at ServerResponse.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/response.js:162:21)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:60:44 {
+      code: 'ERR_HTTP_HEADERS_SENT'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:67:38
+    
+      64 public cartById = async (id: string) => {
+      65   let response: any
+      66   try {
+    → 67     response = await this.prisma.findUniqueOrThrow({
+               where: {
+             ?   id?: String
+               }
+             })
+    
+    Argument where of type CartsWhereUniqueInput needs at least one argument. Available args are listed in green.
+    
+    Note: Lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}

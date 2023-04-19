@@ -23,14 +23,15 @@ export class CartService {
     public updateCart = async (updateDto: CreateCartDto, id: string) => {
       let response: any
       try {
-        response = this.prisma.update({ where: { id }, data: updateDto })
+        response = await this.prisma.update({ where: { id }, data: updateDto })
         return new ResponseObject(null, true, response)
-      } catch (error) {
+      } catch (error: any) {
         logger.error({
           function: 'CartService.updateCart',
           error
+
         })
-        return new ResponseObject(error, false, null)
+        return new ResponseObject(error, false, ('code' in error && error.code === 'P2025' ? 'Id Not Found' : 'Something went wrong'))
       }
     },
     public deleteCart = async (id: string) => {
@@ -38,12 +39,36 @@ export class CartService {
       try {
         response = await this.prisma.delete({ where: { id } })
         return new ResponseObject(null, true, response)
-      } catch (error) {
+      } catch (error: any) {
         logger.error({
           function: 'CartService.deleteCart',
           error
         })
+        return new ResponseObject(error, false, ('code' in error && error.code === 'P2025' ? 'Id Not Found' : 'Something went wrong'))
+      }
+    },
+    public listCarts = async () => {
+      let response: any[]
+      try {
+        response = await this.prisma.findMany()
+        console.log(response)
+        return new ResponseObject(null, true, response)
+      } catch (error) {
+        logger.error({
+          function: 'CartService.listCarts',
+          error
+        })
         return new ResponseObject(error, false, null)
+      }
+    },
+    public cartById = async (id: string) => {
+      let response: any
+      try {
+        response = await this.prisma.findUniqueOrThrow({ where: { id } })
+        return new ResponseObject(null, true, response)
+      } catch (error: any) {
+        logger.error({ function: 'CartService.cartById', error })
+        return new ResponseObject(error, false, ('code' in error && error.code === 'P2025' ? 'Id Not Found' : 'Something went wrong'))
       }
     }
   ) {
