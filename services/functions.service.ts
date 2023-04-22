@@ -182,10 +182,8 @@ export const ListFunction: ListClousure = (modelOut, client): any => {
     const model = modelOut as 'carts'
     let response: any
     try {
-      if (model === 'carts') {
-        response = await client[model].findMany()
-        return new ResponseObject(null, true, response)
-      } else return new ResponseObject(new Error('Type Missmatch'), false, null)
+      response = await client[model].findMany()
+      return new ResponseObject(null, true, response)
     } catch (error) {
       logger.error({ function: 'listCarts', error })
       return new ResponseObject(error, false, null)
