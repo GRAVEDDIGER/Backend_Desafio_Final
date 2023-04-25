@@ -932,3 +932,342 @@
   level: 'error'
 }
 { message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'SalesService.create',
+    error: TypeError: price.forEach is not a function
+        at SalesService.<anonymous> (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:15:15)
+        at Generator.next (<anonymous>)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:8:71
+        at new Promise (<anonymous>)
+        at __awaiter (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:4:12)
+        at SalesService.create (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:10:71)
+        at create (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.controller.ts:12:20)
+        at Layer.handle [as handle_request] (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/layer.js:95:5)
+        at next (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/route.js:114:3)
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'SalesService.create',
+    error: TypeError: price.forEach is not a function
+        at SalesService.<anonymous> (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:15:15)
+        at Generator.next (<anonymous>)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:8:71
+        at new Promise (<anonymous>)
+        at __awaiter (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:4:12)
+        at SalesService.create (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:10:71)
+        at create (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.controller.ts:12:20)
+        at Layer.handle [as handle_request] (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/layer.js:95:5)
+        at next (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/route.js:114:3)
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'SalesService.create',
+    error: TypeError: price.forEach is not a function
+        at SalesService.<anonymous> (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:15:15)
+        at Generator.next (<anonymous>)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:8:71
+        at new Promise (<anonymous>)
+        at __awaiter (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:4:12)
+        at SalesService.create (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:10:71)
+        at create (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.controller.ts:12:20)
+        at Layer.handle [as handle_request] (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/layer.js:95:5)
+        at next (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/route.js:114:3)
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'SalesService.create',
+    error: TypeError: price.forEach is not a function
+        at SalesService.<anonymous> (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:16:15)
+        at Generator.next (<anonymous>)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:8:71
+        at new Promise (<anonymous>)
+        at __awaiter (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:4:12)
+        at SalesService.create (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:10:71)
+        at create (/run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.controller.ts:12:20)
+        at Layer.handle [as handle_request] (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/layer.js:95:5)
+        at next (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/route.js:144:13)
+        at Route.dispatch (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/express/lib/router/route.js:114:3)
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'SalesService.create',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.sales.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:21:44
+    
+      18 })
+      19 const taxes: number = 0.21
+      20 dto = { ...dto, totalWithoutTaxes: totalPrice, totalWithTaxes: totalPrice + (totalPrice * taxes) }
+    → 21 response = await this.prisma.sales.create({
+           data: {
+             cart: {
+               user: {
+               ~~~~
+                 id: 'stringid',
+                 name: 'String',
+                 lastName: 'String',
+                 username: 'String',
+                 phoneNumber: 111,
+                 address: {
+                   street: 'String',
+                   number: 111,
+                   city: 'String',
+                   zipCode: 'String'
+                 }
+               },
+               products: [
+               ~~~~~~~~
+                 {
+                   id: 'String',
+                   name: 'String',
+                   description: 'String',
+                   quantity: 2,
+                   price: 125,
+                   stock: 122,
+                   rate: 3,
+                   category: 'String'
+                 }
+               ]
+             },
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             user: {
+               name: 'string',
+               username: 'strin',
+               lastName: 'string',
+               phoneNumber: 22,
+               address: {
+                 street: 'String',
+                 number: 222,
+                 city: 'String',
+                 zipCode: 'String'
+               },
+               password: 'string',
+               ~~~~~~~~
+         +     id: String
+             },
+             totalWithoutTaxes: 250,
+             totalWithTaxes: 302.5
+                             ~~~~~
+           }
+         })
+    
+    Argument data.cart of type CartsTypeCreateEnvelopeInput needs exactly one argument, but you provided user and products. Please choose one. Available args: 
+    type CartsTypeCreateEnvelopeInput {
+      set?: CartsTypeCreateInput
+    }
+    Unknown arg `user` in data.cart.user for type CartsTypeCreateEnvelopeInput. Did you mean `set`?
+    Unknown arg `products` in data.cart.products for type CartsTypeCreateEnvelopeInput. Did you mean `select`?
+    Unknown arg `password` in data.user.password for type UserTypeCreateInput.
+    Argument id for data.user.id is missing.
+    Argument totalWithTaxes: Got invalid value 302.5 on prisma.createOnesales. Provided Float, expected Int.
+    
+    Note: Lines with + are required
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'SalesService.create',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.sales.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:21:44
+    
+      18 })
+      19 const taxes: number = 0.21
+      20 dto = { ...dto, totalWithoutTaxes: totalPrice, totalWithTaxes: totalPrice + (totalPrice * taxes) }
+    → 21 response = await this.prisma.sales.create({
+           data: {
+             cart: {
+               set: {
+               ~~~
+                 user: {
+                   id: 'stringid',
+                   name: 'String',
+                   lastName: 'String',
+                   username: 'String',
+                   phoneNumber: 111,
+                   address: {
+                     street: 'String',
+                     number: 111,
+                     city: 'String',
+                     zipCode: 'String'
+                   }
+                 }
+               },
+               products: [
+                 {
+                   id: 'String',
+                   name: 'String',
+                   description: 'String',
+                   quantity: 2,
+                   price: 125,
+                   stock: 122,
+                   rate: 3,
+                   category: 'String'
+                 }
+               ],
+         +     id: String,
+         +     createdAt: DateTime,
+         +     updatedAt: DateTime,
+         +     user: {
+         +       name: String,
+         +       lastName: String,
+         +       username: String,
+         +       phoneNumber: Int,
+         +       address: AddressCreateInput,
+         +       id: String
+         +     }
+             },
+             user: {
+               name: 'string',
+               username: 'strin',
+               lastName: 'string',
+               phoneNumber: 22,
+               address: {
+                 street: 'String',
+                 number: 222,
+                 city: 'String',
+                 zipCode: 'String'
+               },
+               password: 'string',
+               ~~~~~~~~
+         +     id: String
+             },
+             totalWithoutTaxes: 250,
+             totalWithTaxes: 302.5
+                             ~~~~~
+           }
+         })
+    
+    Unknown arg `set` in data.cart.set for type CartsTypeCreateInput. Did you mean `user`?
+    Argument id for data.cart.id is missing.
+    Argument createdAt for data.cart.createdAt is missing.
+    Argument updatedAt for data.cart.updatedAt is missing.
+    Argument user for data.cart.user is missing.
+    Unknown arg `password` in data.user.password for type UserTypeCreateInput.
+    Argument id for data.user.id is missing.
+    Argument totalWithTaxes: Got invalid value 302.5 on prisma.createOnesales. Provided Float, expected Int.
+    
+    Note: Lines with + are required
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'SalesService.create',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.sales.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/sales/sales.service.ts:21:44
+    
+      18 })
+      19 const taxes: number = 0.21
+      20 dto = { ...dto, totalWithoutTaxes: totalPrice, totalWithTaxes: totalPrice + (totalPrice * taxes) }
+    → 21 response = await this.prisma.sales.create({
+           data: {
+             cart: {
+               user: {
+               ~~~~
+                 id: 'stringid',
+                 name: 'String',
+                 lastName: 'String',
+                 username: 'String',
+                 phoneNumber: 111,
+                 address: {
+                   street: 'String',
+                   number: 111,
+                   city: 'String',
+                   zipCode: 'String'
+                 }
+               },
+               products: [
+               ~~~~~~~~
+                 {
+                   id: 'String',
+                   name: 'String',
+                   description: 'String',
+                   quantity: 2,
+                   price: 125,
+                   stock: 122,
+                   rate: 3,
+                   category: 'String'
+                 }
+               ]
+             },
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             user: {
+               name: 'string',
+               username: 'strin',
+               lastName: 'string',
+               phoneNumber: 22,
+               address: {
+                 street: 'String',
+                 number: 222,
+                 city: 'String',
+                 zipCode: 'String'
+               },
+               password: 'string',
+               ~~~~~~~~
+         +     id: String
+             },
+             totalWithoutTaxes: 250,
+             totalWithTaxes: 302.5
+                             ~~~~~
+           }
+         })
+    
+    Argument data.cart of type CartsTypeCreateEnvelopeInput needs exactly one argument, but you provided user and products. Please choose one. Available args: 
+    type CartsTypeCreateEnvelopeInput {
+      set?: CartsTypeCreateInput
+    }
+    Unknown arg `user` in data.cart.user for type CartsTypeCreateEnvelopeInput. Did you mean `set`?
+    Unknown arg `products` in data.cart.products for type CartsTypeCreateEnvelopeInput. Did you mean `select`?
+    Unknown arg `password` in data.user.password for type UserTypeCreateInput.
+    Argument id for data.user.id is missing.
+    Argument totalWithTaxes: Got invalid value 302.5 on prisma.createOnesales. Provided Float, expected Int.
+    
+    Note: Lines with + are required
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}

@@ -1,1 +1,1 @@
-export * from './sales.dto.ts'
+export * from './sales.dto'

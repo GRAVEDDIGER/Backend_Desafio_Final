@@ -1,5 +1,5 @@
 import { Prisma } from '@prisma/client'
-export class CreateProductDto implements Omit<Prisma.ProductsCreateInput, 'id'> {
+export class CreateProductDto implements Omit<Prisma.productsCreateInput, 'id'> {
   constructor (
     public name: string,
     public description: string,

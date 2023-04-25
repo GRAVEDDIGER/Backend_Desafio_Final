@@ -1,21 +1,27 @@
-import { Prisma, PrismaClient, Carts, Products, Users } from '@prisma/client'
-import { CreateCartDto, CreateProductDto, CreateUsersDto } from '../entities/'
+import { Prisma, PrismaClient, ModelName } from '@prisma/client'
+import { IRequest } from 'passport-fast-config'
+import { IResponse } from '..'
+import { CreateFunctions } from './functions.service'
 
-interface ModelsType {
-  carts: {
-    create: (data: Prisma.CartsCreateArgs['data']) => any
-  }
-  products: {
-    create: (data: Prisma.ProductsCreateArgs['data']) => any
-  }
-  users: {
-    create: (data: Prisma.UsersCreateArgs['data']) => any
-  }
-}
-type dada = Prisma.CartsCreateArgs['data']
-let ddd: dada
+type ModelNames = Lowercase<Prisma.ModelName>
+type Dto<T extends Lowercase<Prisma.ModelName>> = PrismaClient[T] extends { create: (args: { data: infer U }) => Promise<unknown> } ? U : never
 
-export async function createMethodFn<T extends CreateCartDto | CreateProductDto | CreateUsersDto> (prisma: PrismaClient, model: keyof ModelsType, dto: T): Promise<unknown> {
-  const response = await prisma[model].create({ data: dto }) as unknown as ModelsType[typeof model]['create'] extends (...args: any) => infer R ? R : never
-  return response
+function closure (model: ModelNames, client: PrismaClient) {
+  let innerClient: Omit<PrismaClient[typeof model], 'messages'>
+  model = 'carts'
+  interface CreateFunction {
+    [key: string]: (dto: any) => Promise<IResponse>
+  }
+  // if (model in Prisma.ModelName) {  } else throw new Error('type Missmatch')
+  if (model === 'carts') {
+    interface CreateFunction {
+      create: (dto: Dto<'carts'>) => Promise<IResponse>
+    }
+    innerClient = new PrismaClient().carts
+  }
+
+  const create: CreateFunction = async (dto) => {
+    let response: any
+    response = await innerClient.create({ data: dto })
+  }
 }

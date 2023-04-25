@@ -7,7 +7,7 @@ interface Address {
   zipCode: string
 }
 
-export class CreateUsersDto implements Omit<Omit<Prisma.UsersCreateInput, 'id'>, 'hash'> {
+export class CreateUsersDto implements Omit<Omit<Prisma.usersCreateInput, 'id'>, 'hash'> {
   public hash: string
   constructor (
     public name: string,
