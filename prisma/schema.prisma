@@ -42,7 +42,6 @@ type UserType {
   lastName    String
   username    String
   phoneNumber Int
-  address     Address
   id          String
 }
 
@@ -55,8 +54,8 @@ model users {
   username    String      @unique
   hash        String
   phoneNumber Int
-  address     Address
   Carts       CartsType[]
+  sales       sales[]
 }
 
 model products {
@@ -77,6 +76,7 @@ model carts {
   updatedAt DateTime      @updatedAt
   user      UserType
   products  ProductType[]
+  sales     sales[]
 }
 
 model messages {
@@ -88,11 +88,11 @@ model messages {
 }
 
 model sales {
-  id                String    @id @default(auto()) @map("_id") @db.ObjectId
-  createdAt         DateTime  @default(now())
-  updatedAt         DateTime  @updatedAt
-  cart              CartsType
-  user              UserType
-  totalWithoutTaxes Int
-  totalWithTaxes    Int
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  cart      carts    @relation(fields: [cartsId], references: [id])
+  user      users    @relation(fields: [usersId], references: [id])
+  cartsId   String   @db.ObjectId
+  usersId   String   @db.ObjectId
 }

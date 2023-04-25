@@ -11,7 +11,7 @@ class UserController {
       ' ',
       ' ',
       0,
-      { street: ' ', number: 0, city: ' ', zipCode: ' ' },
+
       ' '
     ),
     private readonly usersService = new UsersService(),

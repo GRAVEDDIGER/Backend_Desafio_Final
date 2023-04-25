@@ -46,6 +46,7 @@ export class SalesController {
     public getById = (req: Request, res: Response) => {
       const { id } = req.params
       this.service.getByID(id).then((response) => {
+        console.log(response)
         res.status(200).send(response)
       }).catch((error: any) => {
         res.status(404).send(error)
