@@ -1,0 +1,10 @@
+<form action="/login" method="post" class="userData">
+  <h2>User Login</h2>
+  <input type="text" name="username" placeholder="User Name" id="user" />
+  <input type="password" name="password" placeholder="Password" />
+  {{#if isError}}
+  <p class="errorMessage">{{message}}</p>
+  {{/if}}
+  <button class="buttonSub">Login</button>
+  <a href="/register">Sign Up</a>
+</form>

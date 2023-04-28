@@ -1,0 +1,16 @@
+<form id="userForm" action="/register" method="post" class="userData">
+  <h2>Datos del usuario</h2>
+  <input type="text" name="username" id="user" placeholder="e-Mail" />
+  <input type="password" name="password" id="password" placeholder="Password" />
+  <input type="text" name="nombre" id="lastName" placeholder="Nombre" />
+  <input type="text" name="apellido" id="lastName" placeholder="Apellido" />
+  <input type="text" name="edad" id="age" placeholder="Edad" />
+  <input type="text" name="phone" id="phoneID" placeholder="Numero de Telefono" />
+  <input type="text" name="adress" id="adressId" placeholder="Direccion" />
+  <input type="text" name="avatar" id="avatar" placeholder="Avatar URL" />
+  <button id="userSave" class="buttonSub">Guardar usuario</button>
+  <a href="/login/goa">Googleauth</a>
+  {{#if isError}}
+    <p class="errorMessage">{{message}}</p>
+  {{/if}}
+</form>

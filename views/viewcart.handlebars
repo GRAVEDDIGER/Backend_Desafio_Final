@@ -1,0 +1,35 @@
+<nav>
+    <a href="/logout">Logout</a>
+    <a href="/viewProducts">Ver Productos</a>
+    <a href="/addProduct">Agregar Productos</a>
+
+    <a href="/viewCart">Ver Carrito</a>
+    <a href="/viewProfile">Ver Perfil</a>
+</nav>
+<div class="container">
+  <h1>Carrito</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>Calificación</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each products}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{price}}</td>
+        <td>{{rate}}</td>
+        <td>{{description}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <div class="buttons">
+    <a class="buy-button" href="/sale">Finalizar compra</a>
+    <a class="back-button" href="/viewProducts">Volver a productos</a>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import { Prisma, CartsType, UserType } from '@prisma/client'
+import { Prisma } from '@prisma/client'
 export class CreateSalesDto implements Prisma.salesCreateInput {
   constructor (
     public cart: Prisma.cartsCreateNestedOneWithoutSalesInput,

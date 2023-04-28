@@ -1,0 +1,565 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  /* margin: 0.5rem 2rem;
+  padding: 0.5rem 2rem; */
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: beige;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+article {
+  max-width: 250px;
+  border: 3px solid black;
+  box-shadow: 3px 3px 15px black;
+  margin: 1rem;
+  padding: 1rem;
+}
+h3 {
+  padding: 1rem;
+}
+img {
+  max-width: 200px;
+  align-self: flex-end;
+}
+.buttonSub {
+  border-radius: 15%;
+  background-color: azure;
+  border: 3px solid #333;
+  box-shadow: 3px 3px 15px #666;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+.buttonSub:hover {
+  background-color: #f0ffdd;
+}
+.buttonSub:active {
+  box-shadow: 5px 5px 25px #666;
+}
+.userData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.userData > input {
+  width: clamp(300px, 400px, 450px);
+  border-radius: 10%;
+  padding: 1rem;
+  margin: 1rem;
+}
+.invisible {
+  display: none;
+}
+.chatBox {
+  display: flex;
+  width: clamp(600px, 900px, 1200px);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem;
+  min-height: 300px;
+  border: 4px dashed #333;
+  padding: 1.5rem;
+}
+.msgBoxClass {
+  border-radius: 10%;
+  padding: 1rem;
+  margin: 1rem;
+  flex: 0.9;
+}
+.messageBoxCombo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: clamp(600px, 900px, 1200px);
+}
+.sendMessageButton {
+  margin: 1rem;
+  width: 50px;
+  border-radius: 15px;
+}
+.msgContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-start;
+  align-items: center;
+  margin: 0.2rem 0;
+}
+.derecha {
+  align-self: flex-end;
+}
+.msgContainer > span {
+  margin: 0.25rem;
+}
+.imgTag {
+  width: 32px;
+  border: 2px solid #333;
+  border-radius: 60%;
+}
+.loginStatus {
+  background-color: #f5f5ca;
+  box-shadow: 3px 3px 15px #f5f5cc;
+}
+.menuContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  padding: 0 1rem;
+  margin: 0px 1rem;
+}
+.menuContainer > span {
+  display: flex;
+  justify-content: center;
+}
+.menuContainer > span > a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.logout {
+  display: none;
+}
+.visible {
+  display: flex !important;
+}
+.errorMessage {
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  text-align: center;
+}
+.sysInfo {
+  display: flex;
+  flex-direction: row;
+}
+.sysInfo > article {
+  min-width: 400px;
+  padding: 1rem;
+}
+.sysInfo > article > div {
+  padding: 1rem 0;
+}
+*/
+/* Fuente y tamaño de letra para todo el formulario */
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+}
+
+/* Encabezado del formulario */
+.userData h2 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ff2e63;
+  text-shadow: 2px 2px #fcb900;
+}
+
+/* Estilo de los campos de entrada */
+.userData input {
+  display: block;
+  margin: 20px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #ff2e63;
+  background-color: #fff;
+  box-shadow: 2px 2px #fcb900;
+}
+
+/* Estilo del botón */
+.userData button {
+  display: block;
+  margin: 30px 0;
+  padding: 10px;
+  background-color: #ff2e63;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-shadow: 2px 2px #fcb900;
+}
+
+.userData button:hover {
+  background-color: #fcb900;
+}
+
+/* Estilo del mensaje de error */
+.userData .errorMessage {
+  color: #ff2e63;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Cambiar el color de fondo del formulario */
+.userData {
+  background-color: #f8b195;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el texto de placeholder */
+.userData input::placeholder {
+  color: #ff2e63;
+  opacity: 0.6;
+}
+
+/* Estilo para el foco en el campo de entrada */
+.userData input:focus {
+  outline: none;
+  box-shadow: 2px 2px #fcb900;
+}
+
+/* Estilo para los campos de entrada con valores */
+.userData input:valid {
+  box-shadow: 2px 2px #8e44ad;
+}
+
+/* Estilo para los campos de entrada con errores */
+.userData input:invalid {
+  box-shadow: 2px 2px #c0392b;
+}
+/* Estilo para el header */
+header {
+  background-color: #fcb900;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el título del header */
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 2px 2px #ff2e63;
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: #ff2e63;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el enlace del footer */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fcb900;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff2e63;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #fcb900;
+}
+
+nav a:first-child {
+  margin-right: auto;
+}
+
+nav a:last-child {
+  margin-left: auto;
+}
+.card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.card-text {
+  margin: 0;
+  font-size: 16px;
+  color: #000;
+}
+.mi-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 50px auto;
+}
+
+.mi-formulario h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.cardButton {
+  width: 100%;
+  display: flex;
+  min-height: 150px;
+}
+.card-header {
+  background-color: #0d6efd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card-header h2 {
+  margin: 0;
+}
+
+.card-header .price {
+  font-size: 1.2rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-footer {
+  background-color: #f6f6f6;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-footer .rate {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border: #000 solid 2px;
+  margin: 2rem;
+  box-shadow: 3px 3px 15px #333;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.buy-button,
+.back-button {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buy-button:hover,
+.back-button:hover {
+  background-color: #555;
+}
+.salesScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c0392b;
+  color: #ddd;
+}
+.salesScreenTitle {
+  font-size: 32px;
+  color: #333;
+}
+.salesScreenP {
+  color: #ddd;
+}

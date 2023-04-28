@@ -1,0 +1,18 @@
+<nav>
+    <a href="/logout">Logout</a>
+    <a href="/viewProducts">Ver Productos</a>
+    <a href="/addProduct">Agregar Productos</a>
+
+    <a href="/viewCart">Ver Carrito</a>
+    <a href="/viewProfile">Ver Perfil</a>
+</nav>
+<form class="product" action="/addcart/{{_id}}">
+  <h1>{{name}}</h1>
+  <p class="price">{{price}}</p>
+  <div class="rating">
+    <p class="price">Rate : {{rate}}</p>
+
+  </div>
+  <p class="description">{{description}}</p>
+<button>Agregar al carrito</button>
+</form>

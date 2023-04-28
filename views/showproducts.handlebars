@@ -1,0 +1,26 @@
+<nav>
+    <a href="/logout">Logout</a>
+    <a href="/viewProducts">Ver Productos</a>
+    <a href="/addProduct">Agregar Productos</a>
+
+    <a href="/viewCart">Ver Carrito</a>
+    <a href="/viewProfile">Ver Perfil</a>
+</nav>
+    <div class="container">
+      {{#each products}}
+      <form class="card" action="/viewProducts/{{_id}}" method="get">
+      <button class="cardButton">
+        <div class="card-header">
+          <h2>{{name}}</h2>
+          <span class="price">${{price}}</span>
+        </div>
+        <div class="card-body">
+          <p>{{description}}</p>
+        </div>
+        <div class="card-footer">
+          <span class="rate">{{rate}}/5</span>
+        </div>
+        </button>
+      </form>
+      {{/each}}
+    </div>

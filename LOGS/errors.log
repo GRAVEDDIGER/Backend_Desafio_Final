@@ -1023,3 +1023,428 @@
   },
   level: 'error'
 }
+{
+  message: {
+    function: 'AuthService.verifyLocalLogin',
+    error: TypeError: Cannot read properties of null (reading 'username')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:17:18
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.verifyLocalLogin',
+    error: TypeError: Cannot read properties of null (reading 'username')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:18:18
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.verifyLocalLogin',
+    error: TypeError: Cannot use 'in' operator to search for 'username' in null
+        at /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:18:23
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.verifyLocalLogin',
+    error: TypeError: req.flash is not a function
+        at allFailed (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/passport/lib/middleware/authenticate.js:134:15)
+        at attempt (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/passport/lib/middleware/authenticate.js:183:28)
+        at Strategy.strategy.fail (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/passport/lib/middleware/authenticate.js:305:9)
+        at verified (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/passport-local/lib/strategy.js:82:30)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:21:16
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: TypeError: Cannot set properties of null (setting 'password')
+        at SalesService.AuthService.validateUser (/run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:54:20)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:34:18
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: TypeError: Cannot set properties of null (setting 'password')
+        at SalesService.AuthService.validateUser (/run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:55:20)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:34:18
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: TypeError: Cannot set properties of null (setting 'password')
+        at SalesService.AuthService.validateUser (/run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:55:20)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:34:18
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.users.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:35:31
+    
+      32 else {
+      33   const data: any = req.body
+      34   this.validateUser(user, data, done)
+    → 35   this.prisma.users.create({
+             data: null
+                   ~~~~
+           })
+    
+    Argument data: Got invalid value null on prisma.createOneusers. Provided null, expected usersCreateInput or usersUncheckedCreateInput:
+    type usersCreateInput {
+      id?: String
+      createdAt?: DateTime
+      updatedAt?: DateTime
+      name: String
+      lastName: String
+      username: String
+      hash: String
+      phoneNumber: Int
+      Carts?: CartsTypeListCreateEnvelopeInput | CartsTypeCreateInput | List<CartsTypeCreateInput>
+      sales?: salesCreateNestedManyWithoutUserInput
+    }
+    type usersCreateInput {
+      id?: String
+      createdAt?: DateTime
+      updatedAt?: DateTime
+      name: String
+      lastName: String
+      username: String
+      hash: String
+      phoneNumber: Int
+      Carts?: CartsTypeListCreateEnvelopeInput | CartsTypeCreateInput | List<CartsTypeCreateInput>
+      sales?: salesCreateNestedManyWithoutUserInput
+    }
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.users.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:36:31
+    
+      33 const data: any = req.body
+      34 const response = this.validateUser(user, data, done)
+      35 console.log(response)
+    → 36 this.prisma.users.create({
+           data: {
+             name: 'Adrian',
+             username: 'aabadin@gmail.com',
+             lastName: 'abadin',
+             phoneNumber: 'Adrian',
+                          ~~~~~~~~
+             id: undefined,
+             password: '111',
+             ~~~~~~~~
+             hash: '$2b$10$q3UuD/eQEoCk4.iRBY/qS.dbG/8YZhC/jGeRUmovlnOorBoiTlXTG'
+           }
+         })
+    
+    Argument phoneNumber: Got invalid value 'Adrian' on prisma.createOneusers. Provided String, expected Int.
+    Unknown arg `password` in data.password for type usersCreateInput. Available args:
+    
+    type usersCreateInput {
+      id?: String
+      createdAt?: DateTime
+      updatedAt?: DateTime
+      name: String
+      lastName: String
+      username: String
+      hash: String
+      phoneNumber: Int
+      Carts?: CartsTypeListCreateEnvelopeInput | CartsTypeCreateInput | List<CartsTypeCreateInput>
+      sales?: salesCreateNestedManyWithoutUserInput
+    }
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.users.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:36:31
+    
+      33 const data: any = req.body
+      34 const response = this.validateUser(user, data, done)
+      35 console.log(response)
+    → 36 this.prisma.users.create({
+           data: {
+             name: 'Adrian',
+             username: 'aabadin@gmail.com',
+             lastName: 'abadin',
+             phoneNumber: 'Adrian',
+                          ~~~~~~~~
+             id: undefined,
+             password: '111',
+             ~~~~~~~~
+             hash: '$2b$10$Y9FFkWJ2HwzaPqXj7S8s8OBbp0rM0A9KICyCqiZ5ASji7kmtwW9dy'
+           }
+         })
+    
+    Argument phoneNumber: Got invalid value 'Adrian' on prisma.createOneusers. Provided String, expected Int.
+    Unknown arg `password` in data.password for type usersCreateInput. Available args:
+    
+    type usersCreateInput {
+      id?: String
+      createdAt?: DateTime
+      updatedAt?: DateTime
+      name: String
+      lastName: String
+      username: String
+      hash: String
+      phoneNumber: Int
+      Carts?: CartsTypeListCreateEnvelopeInput | CartsTypeCreateInput | List<CartsTypeCreateInput>
+      sales?: salesCreateNestedManyWithoutUserInput
+    }
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.users.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:36:31
+    
+      33 const data: any = req.body
+      34 const response = this.validateUser(user, data, done)
+      35 console.log(response)
+    → 36 this.prisma.users.create({
+           data: {
+             name: 'Adrian',
+             username: 'aabadin@gmail.com',
+             lastName: 'abadin',
+             phoneNumber: 15,
+             id: undefined,
+             password: '111',
+             ~~~~~~~~
+             hash: '$2b$10$qlElbBIsVXvZdWQYakx0oeai27lpmQ7wpm6r059JzduKtZnV1asOW'
+           }
+         })
+    
+    Unknown arg `password` in data.password for type usersCreateInput. Available args:
+    
+    type usersCreateInput {
+      id?: String
+      createdAt?: DateTime
+      updatedAt?: DateTime
+      name: String
+      lastName: String
+      username: String
+      hash: String
+      phoneNumber: Int
+      Carts?: CartsTypeListCreateEnvelopeInput | CartsTypeCreateInput | List<CartsTypeCreateInput>
+      sales?: salesCreateNestedManyWithoutUserInput
+    }
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.users.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:36:31
+    
+      33 const data: any = req.body
+      34 const response = this.validateUser(user, data, done)
+      35 console.log(response)
+    → 36 this.prisma.users.create({
+           data: {
+             name: 'Adrian',
+             username: 'aabadin@gmail.com',
+             lastName: 'abadin',
+             phoneNumber: 15,
+             id: undefined,
+             password: '111',
+             ~~~~~~~~
+             hash: '$2b$10$Q922EPsYeHHneHACF8SpheSEL7am.ONGm0sFyRWUbJG3vfEbpDTcy'
+           }
+         })
+    
+    Unknown arg `password` in data.password for type usersCreateInput. Available args:
+    
+    type usersCreateInput {
+      id?: String
+      createdAt?: DateTime
+      updatedAt?: DateTime
+      name: String
+      lastName: String
+      username: String
+      hash: String
+      phoneNumber: Int
+      Carts?: CartsTypeListCreateEnvelopeInput | CartsTypeCreateInput | List<CartsTypeCreateInput>
+      sales?: salesCreateNestedManyWithoutUserInput
+    }
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.users.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:36:31
+    
+      33 const data: any = req.body
+      34 const response = this.validateUser(user, data, done)
+      35 console.log(response)
+    → 36 this.prisma.users.create({
+           data: {
+             name: 'Adrian',
+             username: 'aabadin@gmail.com',
+             lastName: 'abadin',
+             phoneNumber: 15,
+             id: undefined,
+             password: '111',
+             ~~~~~~~~
+             hash: '$2b$10$3Kl.JlhxCHugcyvnDmRB4.qAUqqavOW.MKBUZpRffd/iTBKLOHWwC'
+           }
+         })
+    
+    Unknown arg `password` in data.password for type usersCreateInput. Available args:
+    
+    type usersCreateInput {
+      id?: String
+      createdAt?: DateTime
+      updatedAt?: DateTime
+      name: String
+      lastName: String
+      username: String
+      hash: String
+      phoneNumber: Int
+      Carts?: CartsTypeListCreateEnvelopeInput | CartsTypeCreateInput | List<CartsTypeCreateInput>
+      sales?: salesCreateNestedManyWithoutUserInput
+    }
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:14:38
+    
+      11 public createProduct = async (createProductDto: CreateProductDto): Promise<IResponse> => {
+      12   let response: any
+      13   try {
+    → 14     response = await this.prisma.create({
+               data: {
+                 username: 'aabadin@gmail.com',
+                 ~~~~~~~~
+                 password: '111',
+                 ~~~~~~~~
+                 name: 'Adrian',
+                 lastName: 'abadin',
+                 ~~~~~~~~
+                 phoneNumber: 15,
+                 ~~~~~~~~~~~
+             +   description: String,
+             +   stock: Int,
+             +   price: Int,
+             +   rate: Int,
+             +   category: String,
+             ?   id?: String,
+             ?   createdAt?: DateTime,
+             ?   updatedAt?: DateTime
+               }
+             })
+    
+    Unknown arg `username` in data.username for type productsCreateInput. Did you mean `name`?
+    Unknown arg `password` in data.password for type productsCreateInput. Did you mean `category`?
+    Unknown arg `lastName` in data.lastName for type productsCreateInput. Did you mean `name`?
+    Unknown arg `phoneNumber` in data.phoneNumber for type productsCreateInput.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}

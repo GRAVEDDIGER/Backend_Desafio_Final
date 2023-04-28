@@ -8,6 +8,7 @@ export class CreateUsersDto implements Omit<Omit<Prisma.usersCreateInput, 'id'>,
     public username: string,
     public lastName: string,
     public phoneNumber: number,
+    public id?: string,
     public password?: string) {
     if (this.password !== undefined) this.hash = bcrypt.hashSync(this.password, bcrypt.genSaltSync(10))
     else this.hash = ''
