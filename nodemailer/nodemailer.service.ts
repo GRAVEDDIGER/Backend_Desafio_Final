@@ -5,14 +5,14 @@ dotenv.config()
 const trasnsporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.MAIL,
-    pass: process.env.MAILPASS
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS
   }
 })
-
-export function sendMail (to: string, subject: string, message: string): void {
+console.log('mAIL Y CLAVE', process.env.MAIL_USER, process.env.MAIL_PASS)
+export function sendMail (subject: string, message: string): void {
   const from = process.env.MAIL ?? ''
-  trasnsporter.sendMail({ from, to, subject, text: message }, (error: any, info: any) => {
+  trasnsporter.sendMail({ from, to: process.env.MAIL_ADMIN, subject, text: message }, (error: any, info: any) => {
     if (error !== undefined) {
       logger.error({
         function: 'nodemailer.service', error

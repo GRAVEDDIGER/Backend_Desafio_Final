@@ -35,6 +35,7 @@ export class AuthService extends PrismaSingleton {
       })
     }
     this.signUpLocal = (req: Request, username: string, _password: string, done: (error: any, user: any, message?: any) => any): void => {
+      console.log(req.body)
       this.prisma.users.findUnique({ where: { username } })
         .then((response: any) => {
           const user: CreateUsersDto = response as CreateUsersDto
@@ -44,9 +45,8 @@ export class AuthService extends PrismaSingleton {
             const response = this.validateUser(user, data, done)
             this.prisma.users.create({ data: response })
               .then((response: any) => {
-                console.log(response)
-                sendMail(username, 'User created', `User ${username} created successfully`)
-                done(null, response)
+                sendMail('User created', `User ${username} created successfully`)
+                return done(null, response)
               })
               .catch((error: any) => {
                 logger.error({

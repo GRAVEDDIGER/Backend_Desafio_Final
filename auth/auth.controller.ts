@@ -14,7 +14,7 @@ export class AuthController {
         if ('id' in req.user) {
           console.log(req.user.id)
 
-          res.send(this.service.jwtIssuance({ sub: req.user.id }))
+          res.cookie('jwt', this.service.jwtIssuance({ sub: req.user.id }), { httpOnly: true })
         }
       } else res.redirect('/auth/login')
       next()

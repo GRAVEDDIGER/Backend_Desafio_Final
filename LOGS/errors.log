@@ -1448,3 +1448,119 @@
   },
   level: 'error'
 }
+{
+  message: {
+    level: 'error',
+    function: 'UsersService.create()',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/users/users.service.ts:15:44
+    
+      12 public create = async (createUserDto: CreateUsersDto): Promise<IResponse> => {
+      13   if ('password' in createUserDto) delete createUserDto?.password
+      14   try {
+    → 15     const response = await this.prisma.create(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: " ", length 1 for the field 'id'.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: `Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: " ", length 1 for the field 'id'.`
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    level: 'error',
+    function: 'UsersService.create()',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/users/users.service.ts:15:44
+    
+      12 public create = async (createUserDto: CreateUsersDto): Promise<IResponse> => {
+      13   if ('password' in createUserDto) delete createUserDto?.password
+      14   try {
+    → 15     const response = await this.prisma.create(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: " ", length 1 for the field 'id'.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: `Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: " ", length 1 for the field 'id'.`
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'nodemailer.service',
+    error: Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+    535 5.7.8  https://support.google.com/mail/?p=BadCredentials h42-20020a056870172a00b001762ce27f9asm9641492oae.23 - gsmtp
+        at SMTPConnection._formatError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+        at SMTPConnection._actionAUTHComplete (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+        at SMTPConnection.<anonymous> (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+        at SMTPConnection._processResponse (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+        at SMTPConnection._onData (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+        at TLSSocket.SMTPConnection._onSocketData (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+        at TLSSocket.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at TLSSocket.Readable.push (node:internal/streams/readable:234:10) {
+      code: 'EAUTH',
+      response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+        '535 5.7.8  https://support.google.com/mail/?p=BadCredentials h42-20020a056870172a00b001762ce27f9asm9641492oae.23 - gsmtp',
+      responseCode: 535,
+      command: 'AUTH PLAIN'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'nodemailer.service',
+    error: Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+    535 5.7.8  https://support.google.com/mail/?p=BadCredentials u7-20020a056870440700b0017fea9c156esm9531626oah.18 - gsmtp
+        at SMTPConnection._formatError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+        at SMTPConnection._actionAUTHComplete (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1548:34)
+        at SMTPConnection.<anonymous> (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+        at SMTPConnection._processResponse (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+        at SMTPConnection._onData (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+        at TLSSocket.SMTPConnection._onSocketData (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44)
+        at TLSSocket.emit (node:events:513:28)
+        at addChunk (node:internal/streams/readable:324:12)
+        at readableAddChunk (node:internal/streams/readable:297:9)
+        at TLSSocket.Readable.push (node:internal/streams/readable:234:10) {
+      code: 'EAUTH',
+      response: '535-5.7.8 Username and Password not accepted. Learn more at\n' +
+        '535 5.7.8  https://support.google.com/mail/?p=BadCredentials u7-20020a056870440700b0017fea9c156esm9531626oah.18 - gsmtp',
+      responseCode: 535,
+      command: 'AUTH PLAIN'
+    }
+  },
+  level: 'error'
+}
+{
+  message: { function: 'nodemailer.service', error: null },
+  level: 'error'
+}
+{
+  message: { function: 'nodemailer.service', error: null },
+  level: 'error'
+}
+{
+  message: { function: 'nodemailer.service', error: null },
+  level: 'error'
+}
+{
+  message: { function: 'nodemailer.service', error: null },
+  level: 'error'
+}

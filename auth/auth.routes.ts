@@ -3,6 +3,9 @@ import passport from 'passport'
 import { AuthController } from './auth.controller'
 export const authRoutes = Router()
 const authController = new AuthController()
+/*
+* LOGIN ROUTES
+*/
 authRoutes.post('/login', passport.authenticate('login', { failureRedirect: '/auth/loginfailed' }), authController.jwtIssuance, (req: Request, res: Response) => {
   res.status(300).redirect('/products')
 })
@@ -13,6 +16,12 @@ authRoutes.get('/loginfailed', (req: Request, res: Response) => {
   const message = req.flash()
   res.render('login', { isError: true, message })
 })
+/*
+* SIGN UP ROUTES
+*/
 authRoutes.post('/signup', passport.authenticate('register'), authController.jwtIssuance, (req: Request, res: Response) => {
   console.log('registred', req.isAuthenticated)
+})
+authRoutes.get('/signup', (req: Request, res: Response) => {
+  res.render('register')
 })
