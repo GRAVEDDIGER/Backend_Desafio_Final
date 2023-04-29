@@ -5,7 +5,6 @@ import { CreateUsersDto } from '../entities'
 import { type Request } from 'express'
 import jwt from 'jsonwebtoken'
 import fs from 'fs'
-import { sendMail } from '../nodemailer/nodemailer.service'
 import dotenv from 'dotenv'
 dotenv.config()
 const privateKey = fs.readFileSync('auth/id_rsa_priv.pem')
@@ -20,14 +19,17 @@ export class AuthService extends PrismaSingleton {
   constructor () {
     super()
     this.verifyLocalLogin = (username: string, password: string, done: (error: any, user: any, message?: any) => any): void => {
-      console.log(username)
+      console.log(username, password)
       this.prisma.users.findUnique({ where: { username } }).then((response: any) => {
         const user: CreateUsersDto = response as CreateUsersDto
         console.log(user, 'login')
         if (user !== null && user !== undefined && 'username' in user) {
-          console.log('user exists')
-          if (bcrypt.compareSync(password, user.hash)) done(null, user)
-          else done(null, false, { message: `Password doesnt match with user:${user.username}` })
+          const isValid = bcrypt.compareSync(password, user.hash)
+          console.log('user exists', isValid)
+          if (isValid) {
+            console.log('password match')
+            done(null, user)
+          } else done(null, false, { message: `Password doesnt match with user:${user.username}` })
         } else done(null, false, { message: `User ${username} doesnt exist` })
       }).catch((error: any) => {
         logger.error({ function: 'AuthService.verifyLocalLogin', error })
@@ -40,21 +42,29 @@ export class AuthService extends PrismaSingleton {
         .then((response: any) => {
           const user: CreateUsersDto = response as CreateUsersDto
           if (user?.username !== undefined) done(null, false, { message: `User ${username} alrready exists` })
+
           else {
             const data: any = req.body
-            const response = this.validateUser(user, data, done)
-            this.prisma.users.create({ data: response })
-              .then((response: any) => {
-                sendMail('User created', `User ${username} created successfully`)
-                return done(null, response)
-              })
-              .catch((error: any) => {
-                logger.error({
-                  function: 'AuthService.signUpLocal', error
-                })
-                done(error, { message: 'Server error:' })
-              })
-            done(null, user)
+            // const response = this.validateUser(user, data, done)
+            bcrypt.genSalt(10).then(salt => {
+              bcrypt.hash(data.password, salt).then(hash => {
+                data.hash = hash
+                delete data.password
+                console.log('doesnt exist', data)
+                this.prisma.users.create({ data })
+                  .then((response: any) => {
+                    console.log('User Created')
+                    done(null, response)
+                  })
+                  .catch((error: any) => {
+                    logger.error({
+                      function: 'AuthService.signUpLocal', error
+                    })
+                    done(error, { message: 'Server error:' })
+                  })
+                // done(null, user)
+              }).catch(error => { logger.error({ function: 'signUpLocal hash', error }) })
+            }).catch(error => { logger.error({ function: 'signUpLocal', error }) })
           }
         })
         .catch((error: any) => {

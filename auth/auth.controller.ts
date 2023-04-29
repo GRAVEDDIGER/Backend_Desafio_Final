@@ -13,11 +13,14 @@ export class AuthController {
       if (req.user !== undefined) {
         if ('id' in req.user) {
           console.log(req.user.id)
-
           res.cookie('jwt', this.service.jwtIssuance({ sub: req.user.id }), { httpOnly: true })
+          console.log('JWT Issued')
+          next()
         }
-      } else res.redirect('/auth/login')
-      next()
+      } else {
+        res.redirect('/auth/login')
+        return { message: 'not Authorized' }
+      }
     }
   ) {
 
