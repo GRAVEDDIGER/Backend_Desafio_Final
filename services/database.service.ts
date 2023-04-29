@@ -1,8 +1,7 @@
 import { PrismaClient, Prisma } from '@prisma/client'
 import { logger } from '../logger/logger.service'
 import { ResponseObject } from '../entities'
-import { IResponse } from '../index'
-
+import { type IResponse } from '../index'
 export class PrismaSingleton {
   static Instance: any
   constructor (
@@ -19,7 +18,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${modelName}CreateGeneric`,
+                function: `${modelName as string}CreateGeneric`,
                 error
               })
               return new ResponseObject(error, false, null)
@@ -36,7 +35,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${model}updateGeneric`,
+                function: `${model as string}updateGeneric`,
                 error
               })
               return new ResponseObject(error, false, null)
@@ -52,7 +51,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${model}DeleteGeneric`,
+                function: `${model as string}DeleteGeneric`,
                 error
               })
               return new ResponseObject(error, false, null)
@@ -67,7 +66,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${model}ListGeneric`, error
+                function: `${model as string}ListGeneric`, error
               })
               return new ResponseObject(error, false, null)
             }
@@ -82,7 +81,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${model}GetByIdGeneric`, error
+                function: `${model as string}GetByIdGeneric`, error
               })
               return new ResponseObject(error, false, null)
             }

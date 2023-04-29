@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express'
+import express, { type Request, type Response } from 'express'
 import { userRoutes } from './users/users.routes'
 import { productRouter } from './products/products.routes'
 import { cartRouter } from './carts/cart.routes'
@@ -11,9 +11,10 @@ import Session from 'express-session'
 import Store from 'connect-mongo'
 import dotenv from 'dotenv'
 import { authRoutes } from './auth/auth.routes'
+import flash from 'connect-flash'
 dotenv.config()
 export const app = express()
-const store = new Store({ mongoUrl: process.env.DATABASE_URL, ttl: process.env.SESSION_TIMEOUT })
+const store = new Store({ mongoUrl: process.env.DATABASE_URL, ttl: parseInt(process.env.SESSION_TIMEOUT ?? '1296000') })
 const sessionMiddleware = Session({
   store,
   secret: 'clave',
@@ -21,6 +22,7 @@ const sessionMiddleware = Session({
   resave: false,
   saveUninitialized: false
 })
+app.use(flash())
 app.use(express.json())
 app.use(express.static('public'))
 // SESSIONS AND PASSPORT
@@ -39,7 +41,6 @@ app.use('/carts', cartRouter)
 app.use('/sales', salesRouter)
 app.use('/chat', chatRouter)
 app.use('/auth', authRoutes)
-app.get('/', (req: Request, res: Response) => {
-  console.log(req.user)
-  res.render('home')
+app.get('/', (_req: Request, res: Response) => {
+  res.redirect('/products')
 })

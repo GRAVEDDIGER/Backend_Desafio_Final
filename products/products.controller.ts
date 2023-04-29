@@ -1,9 +1,8 @@
 import { ProductService } from './products.service'
-import { Request, Response } from 'express'
-import { CreateProductDto } from './entities/product.dto'
+import { type Request, type Response } from 'express'
+import { type CreateProductDto } from './entities/product.dto'
 import { logger } from '../logger/logger.service'
-import { IResponse } from '../index'
-
+import { type IResponse } from '../index'
 export class ProductController {
   constructor (
     private readonly productService: ProductService = new ProductService(),

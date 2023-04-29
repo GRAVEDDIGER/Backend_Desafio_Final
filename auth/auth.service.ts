@@ -2,7 +2,7 @@ import { logger } from '../logger/logger.service'
 import { PrismaSingleton } from '../services/database.service'
 import bcrypt from 'bcrypt'
 import { CreateUsersDto } from '../entities'
-import { Request } from 'express'
+import { type Request } from 'express'
 import jwt from 'jsonwebtoken'
 import fs from 'fs'
 import { sendMail } from '../nodemailer/nodemailer.service'
@@ -13,13 +13,13 @@ export class AuthService extends PrismaSingleton {
   public verifyLocalLogin
   public signUpLocal
   public verifyJwt
-  private readonly validateUser: (user: CreateUsersDto, data: any, done: Function) => CreateUsersDto
+  private readonly validateUser: (user: CreateUsersDto, data: any, done: (error: any, user: any, message?: any) => any) => CreateUsersDto
   public serialize: (user: any, done: (error: any, id: string | undefined) => void) => void
   public deSerialize: (id: string, done: any) => void
-  public jwtIssuance: (data: any) => void
+  public jwtIssuance: (data: any) => string
   constructor () {
     super()
-    this.verifyLocalLogin = (username: string, password: string, done: Function): void => {
+    this.verifyLocalLogin = (username: string, password: string, done: (error: any, user: any, message?: any) => any): void => {
       console.log(username)
       this.prisma.users.findUnique({ where: { username } }).then((response: any) => {
         const user: CreateUsersDto = response as CreateUsersDto
@@ -29,12 +29,12 @@ export class AuthService extends PrismaSingleton {
           if (bcrypt.compareSync(password, user.hash)) done(null, user)
           else done(null, false, { message: `Password doesnt match with user:${user.username}` })
         } else done(null, false, { message: `User ${username} doesnt exist` })
-      }).catch(error => {
+      }).catch((error: any) => {
         logger.error({ function: 'AuthService.verifyLocalLogin', error })
         done(error, false, { message: 'Server error' })
       })
     }
-    this.signUpLocal = (req: Request, username: string, _password: string, done: Function): void => {
+    this.signUpLocal = (req: Request, username: string, _password: string, done: (error: any, user: any, message?: any) => any): void => {
       this.prisma.users.findUnique({ where: { username } })
         .then((response: any) => {
           const user: CreateUsersDto = response as CreateUsersDto
@@ -43,12 +43,12 @@ export class AuthService extends PrismaSingleton {
             const data: any = req.body
             const response = this.validateUser(user, data, done)
             this.prisma.users.create({ data: response })
-              .then((response) => {
+              .then((response: any) => {
                 console.log(response)
                 sendMail(username, 'User created', `User ${username} created successfully`)
                 done(null, response)
               })
-              .catch(error => {
+              .catch((error: any) => {
                 logger.error({
                   function: 'AuthService.signUpLocal', error
                 })
@@ -57,7 +57,7 @@ export class AuthService extends PrismaSingleton {
             done(null, user)
           }
         })
-        .catch(error => {
+        .catch((error: any) => {
           logger.error({ function: 'AuthService.signUpLocal', error })
           done(error, false, { message: 'Server error' })
         })
@@ -94,24 +94,24 @@ export class AuthService extends PrismaSingleton {
       if ('id' in user) done(null, user.id)
     }
     this.deSerialize = (id, done) => {
-      this.prisma.users.findUnique({ where: { id } }).then(user => done(null, user)).catch(error => done(error))
+      this.prisma.users.findUnique({ where: { id } }).then((user: any) => done(null, user)).catch((error: any) => done(error))
     }
     // eslint-disable-next-line @typescript-eslint/naming-convention
-    this.verifyJwt = (jwt_payload: string, done: Function) => {
+    this.verifyJwt = (jwt_payload: string, done: (error: any, user?: any, message?: any) => any) => {
       this.prisma.users.findUnique({ where: { id: jwt_payload } })
         .then((response: unknown) => {
           const user: CreateUsersDto = response as CreateUsersDto
           if (user !== null && 'username' in user) done(null, user)
           else done(null, false)
         })
-        .catch(error => {
+        .catch((error: any) => {
           logger.error({
             function: 'AuthService.verifyJwt', error
           })
           done(error)
         })
     }
-    this.jwtIssuance = (data) => {
+    this.jwtIssuance = (data): string => {
       return jwt.sign(data, privateKey, { algorithm: 'RS256', expiresIn: process.env.SESSION_TIMEOUT })
     }
   }
