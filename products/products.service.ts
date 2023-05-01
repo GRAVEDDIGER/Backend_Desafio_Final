@@ -14,7 +14,7 @@ export class ProductService {
         response = await this.prisma.create({ data: createProductDto })
         return new ResponseObject(null, true, response)
       } catch (error) {
-        logger.error({ function: 'ProductService.createProduct', error })
+        logger.error({ function: 'ProductService.createProduct', error, createProductDto })
         return new ResponseObject(error, false, null)
       }
     },

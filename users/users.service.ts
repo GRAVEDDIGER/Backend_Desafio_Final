@@ -20,7 +20,7 @@ export class UsersService {
         return new ResponseObject(error, false, (error?.code !== undefined && error?.code === 'P2002') ? 'Duplicated Key Error' : null)// {error,ok:false,response:(error?.code !== undefined &&error?.code==="P2002")? "Duplicated Key Error":null}
       }
     },
-    public update = async (updateUserDto: CreateUsersDto, id: string): Promise<any> => {
+    public update = async (updateUserDto: Partial<CreateUsersDto>, id: string): Promise<any> => {
       try {
         const response = await this.prisma.update({
           where: { id },

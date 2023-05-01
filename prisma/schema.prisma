@@ -46,15 +46,15 @@ type UserType {
 }
 
 model users {
-  id          String      @id @default(auto()) @map("_id") @db.ObjectId
-  createdAt   DateTime    @default(now())
-  updatedAt   DateTime    @updatedAt
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
   name        String
   lastName    String
-  username    String      @unique
+  username    String   @unique
   hash        String
   phoneNumber Int
-  Carts       CartsType[]
+  Carts       String?
   sales       sales[]
 }
 

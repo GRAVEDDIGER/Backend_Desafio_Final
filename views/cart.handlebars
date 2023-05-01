@@ -1,0 +1,19 @@
+<section>
+    <h2>Cart</h2>
+    <article class="card.container">
+        {{#each product}}
+        <div class="card">
+            <span>{{name}}</span>
+            <span>{{price}}</span>
+            <span>{{quantity}}</span>
+            <span><button id="minus">+</button></span>
+            <span><button id="add">-</button></span>
+            <span><button id="erase">Borrar</button></span>
+        </div>
+        {{/each}}
+        <span>
+        <button>Update Cart</button>
+        <button>Order</button>
+        </span>
+    </article>
+</section>

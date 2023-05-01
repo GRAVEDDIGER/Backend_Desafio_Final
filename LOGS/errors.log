@@ -48,3 +48,1359 @@
   },
   level: 'error'
 }
+{
+  message: {
+    function: 'ProductService.listProducts',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findMany()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:47:38
+    
+      44 public listProducts = async () => {
+      45   let response: any[]
+      46   try {
+    → 47     response = await this.prisma.findMany(
+    Error converting field "rate" of expected non-nullable type "Int", found incompatible value of "null".
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      code: 'P2032',
+      clientVersion: '4.13.0',
+      meta: { field: 'rate', expected_type: 'Int', found: 'null' }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.verifyJwt',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.users.findUnique()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:112:25
+    
+      109 // eslint-disable-next-line @typescript-eslint/naming-convention
+      110 this.verifyJwt = (jwt_payload: string, done: (error: any, user?: any, message?: any) => any) => {
+      111   logger.debug({ function: 'AuthService.Verifyjwt', jwt_payload })
+    → 112   this.prisma.users.findUnique({
+              where: {
+                id: {
+                  sub: '644d410025b99e1bfca6f638',
+                  iat: 1682880855,
+                  exp: 1682882151
+                }
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              }
+            })
+    
+    Argument id: Got invalid value 
+    {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1682880855,
+      exp: 1682882151
+    }
+    on prisma.findUniqueusers. Provided Json, expected String.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "add", length 3.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "add", length 3.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "add", length 3.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "add", length 3.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "add", length 3.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "add", length 3.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "add", length 3.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "add", length 3.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:14:38
+    
+      11 public createProduct = async (createProductDto: CreateProductDto): Promise<IResponse> => {
+      12   let response: any
+      13   try {
+    → 14     response = await this.prisma.create({
+               data: {
+             +   name: String,
+             +   description: String,
+             +   stock: Int,
+             +   price: Int,
+             +   rate: Int,
+             +   category: String,
+             ?   id?: String,
+             ?   createdAt?: DateTime,
+             ?   updatedAt?: DateTime
+               }
+             })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `prisma.products.create()` invocation:
+    
+    {
+      data: {
+    +   name: String,
+    +   description: String,
+    +   stock: Int,
+    +   price: Int,
+    +   rate: Int,
+    +   category: String,
+    ?   id?: String,
+    ?   createdAt?: DateTime,
+    ?   updatedAt?: DateTime
+      }
+    }
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+           +   name: String,
+           +   description: String,
+           +   stock: Int,
+           +   price: Int,
+           +   rate: Int,
+           +   category: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument name for data.name is missing.
+    Argument description for data.description is missing.
+    Argument stock for data.stock is missing.
+    Argument price for data.price is missing.
+    Argument rate for data.rate is missing.
+    Argument category for data.category is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: {}
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+               name: '1',
+               price: '1',
+                      ~~~
+               rate: '1',
+                     ~~~
+               stock: '1',
+                      ~~~
+               category: '1',
+           +   description: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument price: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument rate: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument stock: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument description for data.description is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: { name: '1', price: '1', rate: '1', stock: '1', category: '1' }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+               name: '1',
+               price: '1',
+                      ~~~
+               rate: '1',
+                     ~~~
+               stock: '1',
+                      ~~~
+               category: '1',
+           +   description: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument price: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument rate: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument stock: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument description for data.description is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: { name: '1', price: '1', rate: '1', stock: '1', category: '1' }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+               name: '1',
+               price: '1',
+                      ~~~
+               rate: '1',
+                     ~~~
+               stock: '1',
+                      ~~~
+               category: '1',
+           +   description: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument price: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument rate: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument stock: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument description for data.description is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: { name: '1', price: '1', rate: '1', stock: '1', category: '1' }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+               name: '1',
+               price: '1',
+                      ~~~
+               rate: '1',
+                     ~~~
+               stock: '1',
+                      ~~~
+               category: '1',
+           +   description: String,
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument price: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument rate: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument stock: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument description for data.description is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: { name: '1', price: '1', rate: '1', stock: '1', category: '1' }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+               name: '1',
+           +   description: String,
+               stock: '1',
+                      ~~~
+               rate: '1',
+                     ~~~
+               price: '1',
+                      ~~~
+               category: '1',
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument stock: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument rate: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument price: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument description for data.description is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: CreateProductDto {
+      name: '1',
+      description: undefined,
+      stock: '1',
+      rate: '1',
+      price: '1',
+      category: '1'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+               name: 'Batmans Car',
+           +   description: String,
+               stock: '1',
+                      ~~~
+               rate: '5',
+                     ~~~
+               price: '2',
+                      ~~~
+               category: 'Fantasy',
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument stock: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument rate: Got invalid value '5' on prisma.createOneproducts. Provided String, expected Int.
+    Argument price: Got invalid value '2' on prisma.createOneproducts. Provided String, expected Int.
+    Argument description for data.description is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: CreateProductDto {
+      name: 'Batmans Car',
+      description: undefined,
+      stock: '1',
+      rate: '5',
+      price: '2',
+      category: 'Fantasy'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+               name: 'Batmans Car',
+           +   description: String,
+               stock: '1',
+                      ~~~
+               rate: '5',
+                     ~~~
+               price: '2',
+                      ~~~
+               category: 'Fantasy',
+           ?   id?: String,
+           ?   createdAt?: DateTime,
+           ?   updatedAt?: DateTime
+             }
+           })
+    
+    Argument stock: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument rate: Got invalid value '5' on prisma.createOneproducts. Provided String, expected Int.
+    Argument price: Got invalid value '2' on prisma.createOneproducts. Provided String, expected Int.
+    Argument description for data.description is missing.
+    
+    Note: Lines with + are required, lines with ? are optional.
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: CreateProductDto {
+      name: 'Batmans Car',
+      description: undefined,
+      stock: '1',
+      rate: '5',
+      price: '2',
+      category: 'Fantasy'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.createProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:15:38
+    
+      12 let response: any
+      13 console.log(createProductDto)
+      14 try {
+    → 15   response = await this.prisma.create({
+             data: {
+               name: 'Batmans Car',
+               description: 'Real Batmans Car No Fake',
+               stock: '1',
+                      ~~~
+               rate: '5',
+                     ~~~
+               price: '1',
+                      ~~~
+               category: 'Fantasy'
+             }
+           })
+    
+    Argument stock: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    Argument rate: Got invalid value '5' on prisma.createOneproducts. Provided String, expected Int.
+    Argument price: Got invalid value '1' on prisma.createOneproducts. Provided String, expected Int.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    },
+    createProductDto: CreateProductDto {
+      name: 'Batmans Car',
+      description: 'Real Batmans Car No Fake',
+      stock: '1',
+      rate: '5',
+      price: '1',
+      category: 'Fantasy'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.updateProduct',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.update()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:24:38
+    
+      21 public updateProduct = async (updateProductDto: Partial<CreateProductDto>, id: string) => {
+      22   let response: any
+      23   try {
+    → 24     response = await this.prisma.update({
+               where: {
+                 id: '644ee2da2edc067461e62a05'
+               },
+               data: {
+                 name: 'Batmans Car',
+                 price: '5',
+                        ~~~
+                 rate: '5',
+                       ~~~
+                 stock: '1',
+                        ~~~
+                 category: 'Fantasy',
+                 description: 'Real Batmans Car No Fake'
+               }
+             })
+    
+    Argument price: Got invalid value '5' on prisma.updateOneproducts. Provided String, expected Int or IntFieldUpdateOperationsInput.
+    type IntFieldUpdateOperationsInput {
+      set?: Int
+      increment?: Int
+      decrement?: Int
+      multiply?: Int
+      divide?: Int
+    }
+    Argument rate: Got invalid value '5' on prisma.updateOneproducts. Provided String, expected Int or IntFieldUpdateOperationsInput.
+    type IntFieldUpdateOperationsInput {
+      set?: Int
+      increment?: Int
+      decrement?: Int
+      multiply?: Int
+      divide?: Int
+    }
+    Argument stock: Got invalid value '1' on prisma.updateOneproducts. Provided String, expected Int or IntFieldUpdateOperationsInput.
+    type IntFieldUpdateOperationsInput {
+      set?: Int
+      increment?: Int
+      decrement?: Int
+      multiply?: Int
+      divide?: Int
+    }
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: NotFoundError [PrismaClientKnownRequestError]: No products found
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6701
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2025',
+      clientVersion: '4.13.0',
+      meta: undefined
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:67:38
+    
+      64 public cartById = async (id: string) => {
+      65   let response: any
+      66   try {
+    → 67     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: invalid character 'p' was found at index 3 in the provided hex string: "addproduct".
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: `Malformed ObjectID: invalid character 'p' was found at index 3 in the provided hex string: "addproduct".`
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:67:38
+    
+      64 public cartById = async (id: string) => {
+      65   let response: any
+      66   try {
+    → 67     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: invalid character 'p' was found at index 3 in the provided hex string: "addproduct".
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: `Malformed ObjectID: invalid character 'p' was found at index 3 in the provided hex string: "addproduct".`
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:67:38
+    
+      64 public cartById = async (id: string) => {
+      65   let response: any
+      66   try {
+    → 67     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: invalid character 'p' was found at index 3 in the provided hex string: "addproduct".
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: `Malformed ObjectID: invalid character 'p' was found at index 3 in the provided hex string: "addproduct".`
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.listCarts',
+    error: PrismaClientUnknownRequestError: 
+    Invalid `this.prisma.findMany()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:61:38
+    
+      58 public listCarts = async () => {
+      59   let response: any[]
+      60   try {
+    → 61     response = await this.prisma.findMany(
+    Attempted to serialize 'null' with non-composite compatible type '"UserType"' for field user.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6649)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}

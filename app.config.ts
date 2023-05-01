@@ -7,11 +7,13 @@ import { chatRouter } from './chat/chat.routes'
 import { engine } from 'express-handlebars'
 import passport from 'passport'
 import './auth/auth.localStrategy'
+import './auth/auth.jwt'
 import Session from 'express-session'
 import Store from 'connect-mongo'
 import dotenv from 'dotenv'
 import { authRoutes } from './auth/auth.routes'
 import flash from 'connect-flash'
+import cookieParser from 'cookie-parser'
 dotenv.config()
 export const app = express()
 const store = new Store({ mongoUrl: process.env.DATABASE_URL, ttl: parseInt(process.env.SESSION_TIMEOUT ?? '1296000') })
@@ -24,7 +26,11 @@ const sessionMiddleware = Session({
 })
 app.use(flash())
 app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+
 app.use(express.static('public'))
+app.use(cookieParser())
+
 // SESSIONS AND PASSPORT
 app.use(sessionMiddleware)
 app.use(passport.initialize())

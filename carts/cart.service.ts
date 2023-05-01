@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient, ProductType } from '@prisma/client'
 import { CreateCartDto } from './entities/cart.dto'
 import { logger } from '../logger/logger.service'
 import { ResponseObject } from '../entities'
@@ -19,6 +19,14 @@ export class CartService {
         })
         return new ResponseObject(error, false, null)
       }
+    },
+    public addProduct = async (product: ProductType, id: string) => {
+      return await this.prisma.update({ where: { id }, data: { products: { push: product } } })
+        .then(response => new ResponseObject(null, true, response))
+        .catch(error => {
+          logger.error({ function: 'cartService.addProduct', error })
+          return new ResponseObject(error, false, null)
+        })
     },
     public updateCart = async (updateDto: CreateCartDto, id: string) => {
       let response: any

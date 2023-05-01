@@ -13,10 +13,14 @@ authRoutes.post('/login',
   passport.authenticate('login', { failureRedirect: '/auth/loginfailed' }),
   authController.jwtIssuance,
   (req: Request, res: Response) => {
-    res.render('showproducts')
+    console.log('post done')
+    // res.redirect('/products')
+
+    // res.render('showproducts')
   })
 
 authRoutes.get('/login', (req: Request, res: Response) => {
+  console.log(req.cookies)
   res.render('login')
 })
 authRoutes.get('/loginfailed', (req: Request, res: Response) => {

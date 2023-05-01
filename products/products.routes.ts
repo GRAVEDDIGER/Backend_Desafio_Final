@@ -1,11 +1,15 @@
 import { ProductController } from './products.controller'
-import { Router } from 'express'
-import { AuthController } from '../auth/auth.controller'
-const authController = new AuthController()
+import { Response, Router, Request } from 'express'
+import passport from 'passport'
 export const productRouter = Router()
 const productController = new ProductController()
-productRouter.post('/', productController.createProduct)
+productRouter.post('/', passport.authenticate('jwt', { session: false }), productController.createProduct)
 productRouter.put('/:id', productController.updateProduct)
 productRouter.delete('/:id', productController.deleteProduct)
-productRouter.get('/', authController.routeGuard, productController.listProducts)
-productRouter.get('/:id', productController.productById)
+productRouter.get('/', passport.authenticate('jwt', { session: false }), productController.listProducts)
+productRouter.get('/update/:id', productController.getUpdate)
+productRouter.get('/add', (req: Request, res: Response) => {
+  res.render('addproduct')
+})
+
+productRouter.get('/:id', passport.authenticate('jwt', { session: false }), productController.productById)

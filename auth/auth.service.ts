@@ -108,7 +108,9 @@ export class AuthService extends PrismaSingleton {
     }
     // eslint-disable-next-line @typescript-eslint/naming-convention
     this.verifyJwt = (jwt_payload: string, done: (error: any, user?: any, message?: any) => any) => {
-      this.prisma.users.findUnique({ where: { id: jwt_payload } })
+      logger.debug({ function: 'AuthService.Verifyjwt', jwt_payload })
+      const id = jwt_payload.sub as unknown as string
+      this.prisma.users.findUnique({ where: { id } })
         .then((response: unknown) => {
           const user: CreateUsersDto = response as CreateUsersDto
           if (user !== null && 'username' in user) done(null, user)
