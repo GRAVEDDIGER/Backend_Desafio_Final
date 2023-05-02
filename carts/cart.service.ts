@@ -1,4 +1,4 @@
-import { PrismaClient, ProductType } from '@prisma/client'
+import { Prisma, PrismaClient, ProductType } from '@prisma/client'
 import { CreateCartDto } from './entities/cart.dto'
 import { logger } from '../logger/logger.service'
 import { ResponseObject } from '../entities'
@@ -55,6 +55,22 @@ export class CartService {
         return new ResponseObject(error, false, ('code' in error && error.code === 'P2025' ? 'Id Not Found' : 'Something went wrong'))
       }
     },
+
+    public deleteProduct = async (cartId: string, productId: string) => {
+      try {
+        const cartData: Prisma.cartsCreateInput = await this.prisma.findUniqueOrThrow({ where: { id: cartId } }) as Prisma.cartsCreateInput
+        if (cartData.products !== undefined) {
+          const productData: ProductType[] = cartData.products as ProductType[]
+          const finalData: ProductType[] = productData.splice(parseInt(productId), 1) // filter(product => product.id !== productId)
+          console.log(finalData)
+          const response = await this.prisma.update({ where: { id: cartId }, data: { products: productData } })
+          return new ResponseObject(null, true, response)
+        }
+      } catch (error) {
+        logger.error({ function: 'CartService.deleteProduct', error })
+        return new ResponseObject(error, false, null)
+      }
+    },
     public listCarts = async () => {
       let response: any[]
       try {
@@ -77,6 +93,22 @@ export class CartService {
       } catch (error: any) {
         logger.error({ function: 'CartService.cartById', error })
         return new ResponseObject(error, false, ('code' in error && error.code === 'P2025' ? 'Id Not Found' : 'Something went wrong'))
+      }
+    },
+    public updateProducts = async (cartId: string, productArray: any[]) => {
+      try {
+        const cartData: Prisma.cartsCreateInput = await this.prisma.findUniqueOrThrow({ where: { id: cartId } }) as Prisma.cartsCreateInput
+        const products: Prisma.ProductTypeCreateInput[] = cartData.products as Prisma.ProductTypeCreateInput[]
+        products.forEach((product, index) => {
+          if (typeof productArray[index] === 'string') {
+            product.quantity = parseInt(productArray[index])
+          } else product.quantity = productArray[index]
+        })
+        const response = await this.prisma.update({ where: { id: cartId }, data: { products } })
+        return new ResponseObject(null, true, response)
+      } catch (error) {
+        logger.error({ function: 'CartService.updateProducts', error })
+        return new ResponseObject(error, false, null)
       }
     }
   ) {

@@ -19,6 +19,5 @@ export interface UserType {
   lastName: string
   username: string
   phoneNumber: number
-  address: Address
   id: string
 }

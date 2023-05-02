@@ -69,6 +69,16 @@ export class UsersService {
         logger.error({ level: 'error', function: 'UsersService.deleteUser', error })
         return new ResponseObject(error, false, null) // {error,ok:false,response:null}
       }
+    },
+    public deleteCart = async (id: string) => {
+      try {
+        console.log(id)
+        const response = await this.prisma.update({ where: { id }, data: { Carts: null } })
+        return new ResponseObject(null, true, response)
+      } catch (error) {
+        logger.error({ function: 'UsersService.deleteCart', error })
+        return new ResponseObject(error, false, null)
+      }
     }
   ) {
     if (UsersService.Instance === undefined) {

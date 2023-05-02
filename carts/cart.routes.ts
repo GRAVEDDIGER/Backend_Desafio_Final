@@ -5,6 +5,8 @@ const cartController = new CartController()
 export const cartRouter = Router()
 
 cartRouter.get('/addproduct/:id/:quantity', passport.authenticate('jwt'), cartController.addProduct)
+cartRouter.delete('/deleteproduct/:cid/:pid', cartController.deleteProduct)
+cartRouter.put('/updateproducts/:id', cartController.updateProducts)
 cartRouter.post('/:id', cartController.createCart)
 cartRouter.put('/:id', cartController.updateCart)
 cartRouter.delete('/:id', cartController.deleteCart)

@@ -1,19 +1,22 @@
-<section>
     <h2>Cart</h2>
-    <article class="card.container">
-        {{#each product}}
-        <div class="card">
-            <span>{{name}}</span>
-            <span>{{price}}</span>
-            <span>{{quantity}}</span>
-            <span><button id="minus">+</button></span>
-            <span><button id="add">-</button></span>
-            <span><button id="erase">Borrar</button></span>
+<section>
+    <article class="cardcontainer" id="{{cartId}}">
+        {{#each products}}
+        <div class="cartCard">
+            <div>{{name}}</div>
+            <div>Price : {{price}}</div>
+           
+            <div>
+            <span><label for="quantity">Cantidad :</label> <input type="number" name="{{id}}" value="{{quantity}}" ></span>
+            <span><button class="erase" name="{{@index}}">Borrar</button></span>
+            </div>
         </div>
         {{/each}}
-        <span>
-        <button>Update Cart</button>
-        <button>Order</button>
+        <span class="cartButtonsContainer">
+        <button class="updateButton">Update Cart</button>
+        <button class="deleteButton">Delete Cart</button>
+        <button class="orderButton">Order</button>
         </span>
     </article>
 </section>
+<script src="/cart.js"></script>

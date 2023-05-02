@@ -46,6 +46,15 @@ article {
   margin: 1rem;
   padding: 1rem;
 }
+.cardcontainer {
+  width: auto;
+  max-width: 400px !important;
+}
+.cartCard {
+  box-shadow: 3px 3px 15px #333;
+  margin: 1rem;
+  padding: 1rem;
+}
 h3 {
   padding: 1rem;
 }
@@ -562,4 +571,17 @@ tbody tr:nth-child(even) {
 }
 .salesScreenP {
   color: #ddd;
+}
+.cartButtonsContainer {
+  display: flex;
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.cartButtonsContainer > button {
+  margin: 8px;
+  border-radius: 15%;
+  padding: 0.5rem;
 }

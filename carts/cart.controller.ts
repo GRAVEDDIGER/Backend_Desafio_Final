@@ -6,7 +6,8 @@ import { IResponse } from '../index'
 import { ResponseObject } from '../entities'
 import { ProductService } from '../products/products.service'
 import { UsersService } from '../users/users.service'
-import { ProductType } from '../entities/models'
+import { ProductType, UserType } from '../entities/models'
+import { Prisma } from '@prisma/client'
 export class CartController {
   static Instance: any
   constructor (
@@ -17,13 +18,32 @@ export class CartController {
       const { id } = req.params
       this.productService.productById(id)
         .then(product => {
-          const dto: CreateCartDto = product.response
-          this.cartService.createCart(dto).then((response: IResponse) => {
+          const dto: Partial<ProductType> = product.response
+          let userDto: Partial<Prisma.usersCreateInput>
+          let finalDto: UserType
+          if (req.user !== undefined) {
+            userDto = req.user as Prisma.usersCreateInput
+            if (userDto.createdAt !== undefined) delete userDto.createdAt
+            if (userDto.hash !== undefined) delete userDto.hash
+            if (userDto.updatedAt !== undefined) delete userDto.updatedAt
+            if (userDto.Carts !== undefined) delete userDto.Carts
+
+            finalDto = userDto as UserType
+          } else {
+            res.redirect('/auth/login')
+            throw new Error('User must be Logged in')
+          }
+          if ('createdAt' in dto) { delete dto.createdAt }
+          if ('updatedAt' in dto) { delete dto.updatedAt }
+          dto.quantity = parseInt(req.params.quantity)
+          const productDto: ProductType = dto as ProductType
+          this.cartService.createCart({ user: finalDto, products: [{ ...productDto }] }).then((response: IResponse) => {
             if (response.ok) {
               // eslint-disable-next-line @typescript-eslint/prefer-optional-chain
               if (req.user !== undefined && req.user !== null && 'id' in req.user && req.user.id !== undefined && req.user.id !== null) {
-                this.usersService.update({ carts: response.response.id as string }, req.user.id as string)
-                  .then(() => {
+                this.usersService.update({ Carts: response.response.id as string }, req.user.id as string)
+                  .then((cart) => {
+                    console.log(cart)
                     res.redirect(`/carts/${response.response.id as string}`)
                   })
                   .catch(error => { logger.error({ function: 'cartController.usersService', error }) })
@@ -47,7 +67,7 @@ export class CartController {
       if (req.user !== undefined && 'id' in req.user) {
         if ('Carts' in req.user && req.user.Carts !== undefined && req.user.Carts !== null) {
           cartId = req.user.Carts as string
-          console.log(cartId)
+          console.log({ cartId }, 'CartId There is  a Cart on the user Db')
           this.productService.productById(productId)
             .then((product: IResponse) => {
               const productDto: ProductType = {
@@ -60,8 +80,9 @@ export class CartController {
                 category: product.response.category,
                 rate: product.response.rate
               }
+              console.log(product)
               this.cartService.addProduct(productDto, cartId)
-                .then(() => { res.redirect('/products') })
+                .then(() => { res.redirect(`/carts/${cartId}`) })
                 .catch(error => { logger.error({ function: 'cartController.addProduct', error }) })
             })
             .catch(error => {
@@ -69,7 +90,7 @@ export class CartController {
               res.status(404).send(error)
             })
         } else {
-          // aca genero el nuevo cart
+          this.createCart(req, res)
         }
       } else {
         console.log('no user')
@@ -98,8 +119,14 @@ export class CartController {
     public deleteCart = (req: Request, res: Response) => {
       const { id } = req.params
       this.cartService.deleteCart(id).then((response: IResponse) => {
-        if (response.ok) res.status(200).send(response)
-        else res.status(400).send(response)
+        if (req.user !== undefined && 'id' in req.user) {
+          this.usersService.deleteCart(req.user.id as string)
+            .then(() => {
+              if (response.ok) res.status(200).send(response)
+              else res.status(400).send(response)
+            })
+            .catch(error => { logger.error({ function: 'cartController.deleteCart', error }) })
+        }
       })
         .catch((error: any) => {
           logger.error({
@@ -123,7 +150,7 @@ export class CartController {
       const { id } = req.params
       this.cartService.cartById(id)
         .then((response: IResponse) => {
-          if (response.ok) res.render('cart', { products: response.response })// status(200).send(response)
+          if (response.ok) res.render('cart', { products: response.response.products, cartId: id })
           else res.status(404).send(response)
         })
         .catch((error: any) => {
@@ -132,6 +159,27 @@ export class CartController {
             error
           })
           return new ResponseObject(error, false, null)
+        })
+    },
+    public deleteProduct = (req: Request, res: Response) => {
+      const { cid, pid } = req.params
+      this.cartService.deleteProduct(cid, pid)
+        .then((response) => {
+          logger.debug({ function: 'cartController.deleteProduct', response })
+          res.send({ response })
+        })
+        .catch(error => { logger.error({ function: 'cartsControler.deleteProduct', error }) })
+    },
+    public updateProducts = (req: Request, res: Response) => {
+      const { id } = req.params
+      const productArray: number[] = req.body as number[]
+      this.cartService.updateProducts(id, productArray)
+        .then(response => {
+          res.send(response)
+        })
+        .catch(error => {
+          logger.error({ function: 'CartController.updateProducts', error })
+          res.status(404).send(error)
         })
     }
   ) {
