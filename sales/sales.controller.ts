@@ -2,57 +2,32 @@ import { Request, Response } from 'express'
 import { CreateSalesDto } from './entities'
 import { SalesService } from './sales.service'
 import { logger } from '../logger/logger.service'
+import { sendMailtoUser } from '../nodemailer/nodemailer.service'
 
 export class SalesController {
   static Instance: any
   constructor (
     private readonly service = new SalesService(),
     public create = (req: Request, res: Response): void => {
-      const dto: CreateSalesDto = req.body
-      this.service.create(dto).then((response: any) => {
-        res.status(201).send(response)
-      }).catch((error: any) => {
-        res.status(404).send(error)
-      })
-    },
-    public update = (req: Request, res: Response): void => {
-      const dto: CreateSalesDto = req.body
       const { id } = req.params
-      this.service.update(id, dto).then((response: any) => {
-        res.status(200).send(response)
-      }).catch((error: any) => {
-        logger.error({
-          function: 'SalesController.update',
-          error
+      let userId: string
+      if (req.user !== undefined && 'id' in req.user) {
+        userId = req.user.id as string
+      } else {
+        res.redirect('/auth/login')
+        throw new Error('User must be logged')
+      }
+      this.service.createSale(userId, id)
+        .then(response => {
+          logger.debug({ function: 'SalesController.create', response })
+          if (req.user !== undefined && 'username' in req.user) { sendMailtoUser(req.user.username as string, 'Order Acomplished', JSON.stringify(response)) }
+          res.send(response)
         })
-        res.status(404).send(error)
-      })
-    },
-    public deleteData = (req: Request, res: Response) => {
-      const { id } = req.params
-      this.service.deleteData(id).then((response: any) => {
-        res.status(200).send(response)
-      }).catch((error: any) => {
-        res.status(404).send(error)
-      })
-    },
-    public listAll = (_req: Request, res: Response) => {
-      this.service.listAll().then((response) => {
-        res.status(200).send(response)
-      }).catch((error: any) => {
-        res.status(404).send(error)
-      })
-    },
-    public getById = (req: Request, res: Response) => {
-      const { id } = req.params
-      this.service.getByID(id).then((response) => {
-        console.log(response)
-        res.status(200).send(response)
-      }).catch((error: any) => {
-        res.status(404).send(error)
-      })
+        .catch(error => {
+          logger.error({ function: 'SalesController.createSale', error })
+          res.status(404).send(error)
+        })
     }
-
   ) {
     if (SalesController.Instance !== undefined) {
       return SalesController.Instance

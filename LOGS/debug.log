@@ -4643,3 +4643,4436 @@
   },
   level: 'debug'
 }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683059090,
+      exp: 1683145490
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683059090,
+      exp: 1683145490
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683059090,
+      exp: 1683145490
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683059090,
+      exp: 1683145490
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'SalesController.create',
+    response: ResponseObject {
+      error: null,
+      ok: true,
+      response: {
+        id: '6451a2b882630cb1cae33e01',
+        createdAt: 2023-05-02T23:54:31.983Z,
+        updatedAt: 2023-05-02T23:54:31.983Z,
+        cartsId: '6450b398b2f76b77e612bb69',
+        usersId: '644d410025b99e1bfca6f638'
+      }
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'SalesController.create',
+    response: ResponseObject {
+      error: null,
+      ok: true,
+      response: {
+        id: '6451a48e1303e9c3081b48f5',
+        createdAt: 2023-05-03T00:02:22.208Z,
+        updatedAt: 2023-05-03T00:02:22.208Z,
+        cartsId: '6450b398b2f76b77e612bb69',
+        usersId: '644d410025b99e1bfca6f638'
+      }
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'SalesController.create',
+    response: ResponseObject {
+      error: null,
+      ok: true,
+      response: {
+        id: '6451a5c41303e9c3081b48fa',
+        createdAt: 2023-05-03T00:07:32.779Z,
+        updatedAt: 2023-05-03T00:07:32.779Z,
+        cartsId: '6451a4a41303e9c3081b48f8',
+        usersId: '644d410025b99e1bfca6f638'
+      }
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'SalesController.create',
+    response: ResponseObject {
+      error: null,
+      ok: true,
+      response: {
+        id: '6451a68c1303e9c3081b48fc',
+        createdAt: 2023-05-03T00:10:52.795Z,
+        updatedAt: 2023-05-03T00:10:52.795Z,
+        cartsId: '6451a6861303e9c3081b48fb',
+        usersId: '644d410025b99e1bfca6f638'
+      }
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683071570,
+      exp: 1683157970
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.users.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:54:35
+    
+      51 data.hash = hash
+      52 delete data.password
+      53 console.log('doesnt exist', data)
+    → 54 this.prisma.users.create({
+           data: {
+             username: 'rsxabadin@gmail.com',
+             name: 'Back',
+             lastName: 'Coder',
+             phoneNumber: '1',
+                          ~~~
+             hash: '$2b$10$G5vvJJkAv.RSuWnTzSfm1ux3p5RmmdM3TiFuovpbpQV9881UF7c9q'
+           }
+         })
+    
+    Argument phoneNumber: Got invalid value '1' on prisma.createOneusers. Provided String, expected Int.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'nodemailer.service',
+    info: {
+      accepted: [ 'AABADIN@gmail.com' ],
+      rejected: [],
+      ehlo: [
+        'SIZE 35882577',
+        '8BITMIME',
+        'AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH',
+        'ENHANCEDSTATUSCODES',
+        'PIPELINING',
+        'CHUNKING',
+        'SMTPUTF8'
+      ],
+      envelopeTime: 715,
+      messageTime: 679,
+      messageSize: 271,
+      response: '250 2.0.0 OK  1683073336 r3-20020a056830134300b006a5eb4e5a42sm67972otq.60 - gsmtp',
+      envelope: { from: '', to: [ 'AABADIN@gmail.com' ] },
+      messageId: '<0384cd03-78f8-58b3-ebea-0f8fbe64241b@localhost>'
+    }
+  },
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'nodemailer.service',
+    info: {
+      accepted: [ 'AABADIN@gmail.com' ],
+      rejected: [],
+      ehlo: [
+        'SIZE 35882577',
+        '8BITMIME',
+        'AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH',
+        'ENHANCEDSTATUSCODES',
+        'PIPELINING',
+        'CHUNKING',
+        'SMTPUTF8'
+      ],
+      envelopeTime: 676,
+      messageTime: 832,
+      messageSize: 257,
+      response: '250 2.0.0 OK  1683073767 t21-20020a05683022f500b006a5d7d7f6c3sm100945otc.7 - gsmtp',
+      envelope: { from: '', to: [ 'AABADIN@gmail.com' ] },
+      messageId: '<1ffeb6fd-6db5-c1ac-7d27-a6121711bbfc@localhost>'
+    }
+  },
+  level: 'info'
+}
+{
+  message: {
+    function: 'nodemailer.service',
+    info: {
+      accepted: [ 'AABADIN@gmail.com' ],
+      rejected: [],
+      ehlo: [
+        'SIZE 35882577',
+        '8BITMIME',
+        'AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH',
+        'ENHANCEDSTATUSCODES',
+        'PIPELINING',
+        'CHUNKING',
+        'SMTPUTF8'
+      ],
+      envelopeTime: 679,
+      messageTime: 625,
+      messageSize: 280,
+      response: '250 2.0.0 OK  1683074061 j13-20020a4ab1cd000000b00525240c6149sm1641672ooo.31 - gsmtp',
+      envelope: { from: '', to: [ 'AABADIN@gmail.com' ] },
+      messageId: '<d43797d4-39b1-7518-fe5b-823d32327436@localhost>'
+    }
+  },
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'nodemailer.service',
+    info: {
+      accepted: [ 'AABADIN@gmail.com' ],
+      rejected: [],
+      ehlo: [
+        'SIZE 35882577',
+        '8BITMIME',
+        'AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH',
+        'ENHANCEDSTATUSCODES',
+        'PIPELINING',
+        'CHUNKING',
+        'SMTPUTF8'
+      ],
+      envelopeTime: 615,
+      messageTime: 525,
+      messageSize: 256,
+      response: '250 2.0.0 OK  1683074273 t11-20020a9d590b000000b0069436b64bb1sm67184oth.79 - gsmtp',
+      envelope: { from: '', to: [ 'AABADIN@gmail.com' ] },
+      messageId: '<1804404e-170f-190a-e615-46371a12241d@localhost>'
+    }
+  },
+  level: 'info'
+}
+{
+  message: {
+    function: 'nodemailer.service',
+    info: {
+      accepted: [ 'AABADIN@gmail.com' ],
+      rejected: [],
+      ehlo: [
+        'SIZE 35882577',
+        '8BITMIME',
+        'AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH',
+        'ENHANCEDSTATUSCODES',
+        'PIPELINING',
+        'CHUNKING',
+        'SMTPUTF8'
+      ],
+      envelopeTime: 639,
+      messageTime: 587,
+      messageSize: 254,
+      response: '250 2.0.0 OK  1683074354 h16-20020a056808015000b003923ef75a3dsm123944oie.4 - gsmtp',
+      envelope: { from: '', to: [ 'AABADIN@gmail.com' ] },
+      messageId: '<0ac799da-92c9-a76d-929f-0ec7a4442b23@localhost>'
+    }
+  },
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'nodemailer.service',
+    info: {
+      accepted: [ 'AABADIN@gmail.com' ],
+      rejected: [],
+      ehlo: [
+        'SIZE 35882577',
+        '8BITMIME',
+        'AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH',
+        'ENHANCEDSTATUSCODES',
+        'PIPELINING',
+        'CHUNKING',
+        'SMTPUTF8'
+      ],
+      envelopeTime: 623,
+      messageTime: 531,
+      messageSize: 254,
+      response: '250 2.0.0 OK  1683074388 d8-20020a4a5208000000b00545b549c2f1sm1743354oob.22 - gsmtp',
+      envelope: { from: '', to: [ 'AABADIN@gmail.com' ] },
+      messageId: '<d56b71ef-25d5-4179-ea9f-264468e863f7@localhost>'
+    }
+  },
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: NotFoundError [PrismaClientKnownRequestError]: No products found
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6701
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2025',
+      clientVersion: '4.13.0',
+      meta: undefined
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'SalesController.create',
+    response: ResponseObject {
+      error: null,
+      ok: true,
+      response: {
+        id: '6452665dc6beb74379be35c4',
+        createdAt: 2023-05-03T13:49:16.868Z,
+        updatedAt: 2023-05-03T13:49:16.868Z,
+        cartsId: '64526631c6beb74379be35c2',
+        usersId: '6451adea5dea6c82501d0372'
+      }
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'nodemailer.service',
+    error: Error: No recipients defined
+        at SMTPConnection._formatError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+        at SMTPConnection._setEnvelope (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1007:34)
+        at SMTPConnection.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:621:14)
+        at sendMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-transport/index.js:228:28)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-transport/index.js:286:25
+        at SMTPConnection._actionAUTHComplete (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1562:9)
+        at SMTPConnection.<anonymous> (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+        at SMTPConnection._processResponse (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+        at SMTPConnection._onData (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+        at TLSSocket.SMTPConnection._onSocketData (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44) {
+      code: 'EENVELOPE',
+      command: 'API'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductController.CreateProductDto',
+    dto: CreateProductDto {
+      name: 'Batmans Car',
+      description: '2023 Model Airbags Not included',
+      stock: 12,
+      rate: 4,
+      price: 15,
+      category: 'Fantasy'
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '6451adea5dea6c82501d0372',
+      iat: 1683074538,
+      exp: 1683160938
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'SalesController.create',
+    response: ResponseObject {
+      error: null,
+      ok: true,
+      response: {
+        id: '645291674de670f1a13c3e10',
+        createdAt: 2023-05-03T16:52:55.356Z,
+        updatedAt: 2023-05-03T16:52:55.356Z,
+        cartsId: '645291624de670f1a13c3e0e',
+        usersId: '644d410025b99e1bfca6f638'
+      }
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'nodemailer.service',
+    info: {
+      accepted: [ 'aabadin@gmail.com' ],
+      rejected: [],
+      ehlo: [
+        'SIZE 35882577',
+        '8BITMIME',
+        'AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH',
+        'ENHANCEDSTATUSCODES',
+        'PIPELINING',
+        'CHUNKING',
+        'SMTPUTF8'
+      ],
+      envelopeTime: 832,
+      messageTime: 756,
+      messageSize: 494,
+      response: '250 2.0.0 OK  1683132778 v15-20020a0568301bcf00b00697be532609sm737974ota.73 - gsmtp',
+      envelope: { from: '', to: [ 'aabadin@gmail.com' ] },
+      messageId: '<7ee10246-dc7c-be0f-da3d-b5c799f4465a@localhost>'
+    }
+  },
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "fantasy", length 7.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "fantasy", length 7.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{
+  function: 'chatController.listChats',
+  message: 'WebSockets Connected',
+  level: 'info'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683132467,
+      exp: 1683218867
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:159:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:159:42
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Failed to convert '111' to 'String' for the field 'user'.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: "Failed to convert '111' to 'String' for the field 'user'."
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683222208,
+      exp: 1683308608
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683211055,
+      exp: 1683297455
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683232349,
+      exp: 1683318749
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683232349,
+      exp: 1683318749
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683233593,
+      exp: 1683319993
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683233712,
+      exp: 1683320112
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683233712,
+      exp: 1683320112
+    }
+  },
+  level: 'debug'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'SalesController.create',
+    response: ResponseObject {
+      error: null,
+      ok: true,
+      response: {
+        id: '645420c0cbdd94bf019d3634',
+        createdAt: 2023-05-04T21:16:47.614Z,
+        updatedAt: 2023-05-04T21:16:47.614Z,
+        cartsId: '6453c41d838c9b481cdcc687',
+        usersId: '644d410025b99e1bfca6f638'
+      }
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'nodemailer.service',
+    info: {
+      accepted: [ 'aabadin@gmail.com' ],
+      rejected: [],
+      ehlo: [
+        'SIZE 35882577',
+        '8BITMIME',
+        'AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH',
+        'ENHANCEDSTATUSCODES',
+        'PIPELINING',
+        'CHUNKING',
+        'SMTPUTF8'
+      ],
+      envelopeTime: 774,
+      messageTime: 761,
+      messageSize: 494,
+      response: '250 2.0.0 OK  1683235011 k12-20020a05680808cc00b0038dd5bf922bsm2021718oij.22 - gsmtp',
+      envelope: { from: '', to: [ 'aabadin@gmail.com' ] },
+      messageId: '<9bfb65b8-9331-a0ea-6d36-dbff7b419066@localhost>'
+    }
+  },
+  level: 'info'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:161:42
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:161:42
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:161:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:161:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: invalid character 'q' was found at index 0 in the provided hex string: "qq".
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: `Malformed ObjectID: invalid character 'q' was found at index 0 in the provided hex string: "qq".`
+      }
+    }
+  },
+  level: 'error'
+}
+{ message: 'Listening on port 8080', level: 'info' }
+{
+  message: {
+    function: 'AuthService.Verifyjwt',
+    jwt_payload: {
+      sub: '644d410025b99e1bfca6f638',
+      iat: 1683234985,
+      exp: 1683321385
+    }
+  },
+  level: 'debug'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: invalid character 'q' was found at index 0 in the provided hex string: "qq".
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: `Malformed ObjectID: invalid character 'q' was found at index 0 in the provided hex string: "qq".`
+      }
+    }
+  },
+  level: 'error'
+}

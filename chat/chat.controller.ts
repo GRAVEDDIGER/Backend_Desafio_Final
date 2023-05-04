@@ -3,6 +3,9 @@ import { ChatService } from './chat.service'
 import { Request, Response } from 'express'
 import { logger } from '../logger/logger.service'
 import { IResponse } from '../index'
+import { Server } from 'socket.io'
+import { server } from '../app.module'
+import { Prisma } from '@prisma/client'
 export class ChatController {
   constructor (
     private readonly service = new ChatService(),
@@ -47,17 +50,45 @@ export class ChatController {
           res.status(404).send(error)
         })
     },
-    public listChats = (_req: Request, res: Response) => {
-      this.service.listChats()
-        .then((response: IResponse) => {
-          if (response.ok) res.status(200).send(response)
-          else res.status(404).send(response)
-        }).catch((error: any) => {
-          logger.error({
-            function: 'ChatController.listChats', error
+    public listChats = (req: Request, res: Response) => {
+      const io = new Server(server).serveClient(true)
+      io.on('connection', (socket) => {
+        logger.info({ function: 'chatController.listChats', message: 'WebSockets Connected' })
+        if (req.user !== undefined && 'username' in req.user) {
+          socket.emit('userInfo', req.user.username as string)
+        }
+        this.service.listChats()
+          .then(response => {
+            if (response.ok) {
+              const chatData: Prisma.messagesCreateInput[] = response.response as Prisma.messagesCreateInput[]
+              chatData.forEach(post => {
+                io.emit('serverMessage', JSON.stringify({ response: { ...post, id: undefined } }))
+              })
+            }
           })
-          res.status(404).send(error)
+          .catch(error => logger.error({ function: 'chatController.listChats', error }))
+        socket.on('clientMessage', (message) => {
+          if (req.user !== undefined) {
+            console.log(message, req.user)
+            const userData: Prisma.usersCreateInput = req.user as Prisma.usersCreateInput
+            this.service.createChat({
+              author: {
+                id: userData.id as string,
+                lastName: userData.lastName,
+                name: userData.name,
+                phoneNumber: userData.phoneNumber,
+                username: userData.username
+              },
+              message
+            })
+              .then((response) => {
+                io.emit('serverMessage', JSON.stringify({ ...response, id: undefined }))
+              })
+              .catch((error) => { logger.error({ function: 'ChatController.listChats', error }) })
+          } else console.log('User not logged in')
         })
+      })
+      res.render('chat')
     },
     public getByIdChat = (req: Request, res: Response) => {
       const { id } = req.params

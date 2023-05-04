@@ -18,6 +18,6 @@ export interface UserType {
   name: string
   lastName: string
   username: string
-  phoneNumber: number
+  phoneNumber: string
   id: string
 }

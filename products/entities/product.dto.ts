@@ -6,7 +6,8 @@ export class CreateProductDto implements Omit<Prisma.productsCreateInput, 'id'> 
     public stock: number,
     public rate: number,
     public price: number,
-    public category: string) {
+    public category: string,
+    public url: string) {
 
   }
   ;

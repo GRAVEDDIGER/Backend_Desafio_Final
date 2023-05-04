@@ -1,22 +1,14 @@
-<nav>
-    <a href="/logout">Logout</a>
-    <a href="/viewProducts">Ver Productos</a>
-    <a href="/addProduct">Agregar Productos</a>
-
-    <a href="/viewCart">Ver Carrito</a>
-    <a href="/viewProfile">Ver Perfil</a>
-</nav>
 <form class="product" action="#">
   <h1 class="data" id="name">{{name}}</h1>
   <p class="price data" id="price">{{price}}</p>
   <div class="rating">
-   <span>Rate: <p class="price data" id="rate">{{rate}}</p></span>
+    <span>Rate: <p class="price data" id="rate">{{rate}}</p></span>
 
   </div>
   <p class="description data" id="description">{{description}}</p>
-  <div><label for="quantity">Cantidad:</label><input type="number" value="1" name="quantity"class="quantity"></div>
-<button class="buttonSub" id="cart" name={{id}}>Agregar al carrito</button>
-<button class="buttonSub" id="update" name="{{id}}">Editar</button>
-<button class="buttonSub" id="delete" name="{{id}}">Borrar</button>
+  <div><label for="quantity">Cantidad:</label><input type="number" value="1" name="quantity" class="quantity"></div>
+  <button class="buttonSub" id="cart" name={{id}}>Agregar al carrito</button>
+  <button class="buttonSub" id="update" name="{{id}}">Editar</button>
+  <button class="buttonSub" id="delete" name="{{id}}">Borrar</button>
 </form>
 <script src="/showproduct.js"></script>"

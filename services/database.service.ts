@@ -18,7 +18,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${modelName as string}CreateGeneric`,
+                function: `${modelName}CreateGeneric`,
                 error
               })
               return new ResponseObject(error, false, null)
@@ -35,7 +35,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${model as string}updateGeneric`,
+                function: `${model}updateGeneric`,
                 error
               })
               return new ResponseObject(error, false, null)
@@ -51,7 +51,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${model as string}DeleteGeneric`,
+                function: `${model}DeleteGeneric`,
                 error
               })
               return new ResponseObject(error, false, null)
@@ -66,7 +66,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${model as string}ListGeneric`, error
+                function: `${model}ListGeneric`, error
               })
               return new ResponseObject(error, false, null)
             }
@@ -81,7 +81,7 @@ export class PrismaSingleton {
               return new ResponseObject(null, true, response)
             } catch (error) {
               logger.error({
-                function: `${model as string}GetByIdGeneric`, error
+                function: `${model}GetByIdGeneric`, error
               })
               return new ResponseObject(error, false, null)
             }

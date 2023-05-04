@@ -1,5 +1,7 @@
 import { PrismaSingleton } from '../services/database.service'
 import { CreateChatDto } from './entities/chat.dto'
+import { server } from '../app.module'
+import { Server } from 'socket.io'
 
 export class ChatService extends PrismaSingleton {
   public createChat
@@ -7,7 +9,7 @@ export class ChatService extends PrismaSingleton {
   public deleteChat
   public listChats
   public getByIdChat
-  constructor (
+  constructor (public io = new Server(server)
   ) {
     super()
     this.createChat = async (dto: CreateChatDto) => await this.prisma.messages.createGeneric(dto)

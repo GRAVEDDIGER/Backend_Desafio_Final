@@ -12,7 +12,6 @@ export class AuthService extends PrismaSingleton {
   public verifyLocalLogin
   public signUpLocal
   public verifyJwt
-  private readonly validateUser: (user: CreateUsersDto, data: any, done: (error: any, user: any, message?: any) => any) => CreateUsersDto
   public serialize: (user: any, done: (error: any, id: string | undefined) => void) => void
   public deSerialize: (id: string, done: any) => void
   public jwtIssuance: (data: any) => string
@@ -29,7 +28,7 @@ export class AuthService extends PrismaSingleton {
           if (isValid) {
             console.log('password match')
             done(null, user)
-          } else done(null, false, { message: `Password doesnt match with user:${user.username}` })
+          } else done(null, false, { message: `Password doesnt match with user:${username}` })
         } else done(null, false, { message: `User ${username} doesnt exist` })
       }).catch((error: any) => {
         logger.error({ function: 'AuthService.verifyLocalLogin', error })
@@ -54,7 +53,7 @@ export class AuthService extends PrismaSingleton {
                 this.prisma.users.create({ data })
                   .then((response: any) => {
                     console.log('User Created')
-                    done(null, response)
+                    return done(null, response)
                   })
                   .catch((error: any) => {
                     logger.error({
@@ -72,34 +71,7 @@ export class AuthService extends PrismaSingleton {
           done(error, false, { message: 'Server error' })
         })
     }
-    this.validateUser = (user, data, done): CreateUsersDto => {
-      user = new CreateUsersDto(data.name, data.username, data.lastName, data.phoneNumber, undefined, data.password)
-      console.log(user)
-      user.password = (data.password !== undefined)
-        ? data.password
-        : done(null, false, { message: 'password is required' })
-      user.lastName = (data?.lastName !== undefined)
-        ? data.lastName
-        : done(null, false, { message: 'lastName is required' })
-      user.name = (data?.name !== undefined)
-        ? data.name
-        : done(null, false, { message: 'name is required' })
-      user.phoneNumber = (data?.name !== undefined)
-        ? data.phoneNumber
-        : null
-      user.username = (data?.username !== undefined)
-        ? data.username
-        : done(null, false, { message: 'username is required' })
-      const emailValidationRx = /^(([^<>()[\]\\.,;:\s@”]+(\.[^<>()[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
-      if (!emailValidationRx.test(user.username)) done(null, false, { message: 'username should be  an email address' })
 
-      const passwordValidationRx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/
-      if (user.password !== undefined) {
-        if (!passwordValidationRx.test(user.password)) done(null, false, { message: 'Password should have Minimum 8 characters, maximum 15, at least one uppercase letter, at least one lowercase letter, at least one digit, no white spaces, and at least 1 special character.' })
-      }
-      delete user.password
-      return user
-    }
     this.serialize = (user, done) => {
       if ('id' in user) done(null, user.id)
     }
@@ -124,7 +96,7 @@ export class AuthService extends PrismaSingleton {
         })
     }
     this.jwtIssuance = (data): string => {
-      return jwt.sign(data, privateKey, { algorithm: 'RS256', expiresIn: process.env.SESSION_TIMEOUT })
+      return jwt.sign(data, privateKey, { algorithm: 'RS256', expiresIn: process.env.JWT_TIMEOUT })
     }
   }
 }

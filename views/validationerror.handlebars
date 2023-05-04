@@ -1,0 +1,12 @@
+<h2>Bad Request</h2>
+<h3>The data provided by the user doesnt match the requiriements of the server</h3>
+
+<section class="errorSection">
+    {{#each errors}}
+    <div class="cardError">
+        <h3>The field : {{path}}</h3>
+        <h3>{{msg}}</h3>
+
+    </div>
+    {{/each}}
+</section>

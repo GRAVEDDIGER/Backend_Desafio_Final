@@ -7,7 +7,7 @@ export class CreateUsersDto implements Omit<Omit<Prisma.usersCreateInput, 'id'>,
     public name: string,
     public username: string,
     public lastName: string,
-    public phoneNumber: number,
+    public phoneNumber: string,
     public Carts?: string,
     public id?: string,
     public password?: string) {

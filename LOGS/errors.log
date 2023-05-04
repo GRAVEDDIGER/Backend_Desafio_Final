@@ -2135,3 +2135,837 @@
   },
   level: 'error'
 }
+{
+  message: {
+    function: 'AuthService.signUpLocal',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.users.create()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/auth/auth.service.ts:54:35
+    
+      51 data.hash = hash
+      52 delete data.password
+      53 console.log('doesnt exist', data)
+    → 54 this.prisma.users.create({
+           data: {
+             username: 'rsxabadin@gmail.com',
+             name: 'Back',
+             lastName: 'Coder',
+             phoneNumber: '1',
+                          ~~~
+             hash: '$2b$10$G5vvJJkAv.RSuWnTzSfm1ux3p5RmmdM3TiFuovpbpQV9881UF7c9q'
+           }
+         })
+    
+    Argument phoneNumber: Got invalid value '1' on prisma.createOneusers. Provided String, expected Int.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: NotFoundError [PrismaClientKnownRequestError]: No products found
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6701
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2025',
+      clientVersion: '4.13.0',
+      meta: undefined
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'nodemailer.service',
+    error: Error: No recipients defined
+        at SMTPConnection._formatError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:790:19)
+        at SMTPConnection._setEnvelope (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1007:34)
+        at SMTPConnection.send (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:621:14)
+        at sendMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-transport/index.js:228:28)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-transport/index.js:286:25
+        at SMTPConnection._actionAUTHComplete (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:1562:9)
+        at SMTPConnection.<anonymous> (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:546:26)
+        at SMTPConnection._processResponse (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:953:20)
+        at SMTPConnection._onData (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:755:14)
+        at TLSSocket.SMTPConnection._onSocketData (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/nodemailer/lib/smtp-connection/index.js:193:44) {
+      code: 'EENVELOPE',
+      command: 'API'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "fantasy", length 7.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "fantasy", length 7.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:159:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:159:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Failed to convert '111' to 'String' for the field 'user'.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: "Failed to convert '111' to 'String' for the field 'user'."
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: 'Malformed ObjectID: provided hex string representation must be exactly 12 bytes, instead got: "addfailed", length 9.'
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:160:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:161:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:161:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:161:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'CartService.cartById',
+    error: PrismaClientValidationError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.service.ts:91:38
+    
+      88 public cartById = async (id: string) => {
+      89   let response: any
+      90   try {
+    → 91     response = await this.prisma.findUniqueOrThrow({
+               where: {
+                 id: null
+                     ~~~~
+               }
+             })
+    
+    Argument id for where.id must not be null. Please use undefined instead.
+    
+    
+        at mi.validate (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:149:91)
+        at tn.createMessage (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:166:1205)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10962
+        at runInChildSpan (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:70:25817)
+        at t._executeRequest (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10951) {
+      clientVersion: '4.13.0'
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'cartController.cartById',
+    error: TypeError: Cannot read properties of undefined (reading 'reduce')
+        at /run/media/adrianabadin/code/backend_DesafioFinal/carts/cart.controller.ts:161:42
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: invalid character 'q' was found at index 0 in the provided hex string: "qq".
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: `Malformed ObjectID: invalid character 'q' was found at index 0 in the provided hex string: "qq".`
+      }
+    }
+  },
+  level: 'error'
+}
+{
+  message: {
+    function: 'ProductService.productById',
+    error: PrismaClientKnownRequestError: 
+    Invalid `this.prisma.findUniqueOrThrow()` invocation in
+    /run/media/adrianabadin/code/backend_DesafioFinal/products/products.service.ts:59:38
+    
+      56 public productById = async (id: string) => {
+      57   let response: any
+      58   try {
+    → 59     response = await this.prisma.findUniqueOrThrow(
+    Inconsistent column data: Malformed ObjectID: invalid character 'q' was found at index 0 in the provided hex string: "qq".
+        at pn.handleRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:6477)
+        at pn.handleAndLogRequestError (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5907)
+        at pn.request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:176:5786)
+        at t._request (/run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:179:10484)
+        at /run/media/adrianabadin/code/backend_DesafioFinal/node_modules/@prisma/client/runtime/library.js:164:6641 {
+      code: 'P2023',
+      clientVersion: '4.13.0',
+      meta: {
+        message: `Malformed ObjectID: invalid character 'q' was found at index 0 in the provided hex string: "qq".`
+      }
+    }
+  },
+  level: 'error'
+}

@@ -10,8 +10,15 @@ if (form1 !== null) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body
-    }).then(() => {
-      clearInputs(e)
+    }).then((response) => {
+      console.log(response)
+      response.json().then((data) => {
+        if (!data.ok) window.location.href = data.url
+        else window.location.reload()
+      }
+      )
+      // if (response.ok === false) window.location.href = response.url
+      // else clearInputs(e)
       console.log('Data Created')
     }).catch(error => console.log(error))
   })
@@ -26,9 +33,9 @@ function getData (event) {
   })
   return data
 }
-function clearInputs (event) {
-  const inputs = event.target.querySelectorAll('input')
-  inputs.forEach(field => {
-    field.value = ''
-  })
-}
+// function clearInputs (event) {
+//   const inputs = event.target.querySelectorAll('input')
+//   inputs.forEach(field => {
+//     field.value = ''
+//   })
+// }

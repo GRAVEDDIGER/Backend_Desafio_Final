@@ -21,3 +21,14 @@ export function sendMail (subject: string, message: string): void {
   }
   )
 }
+export function sendMailtoUser (to: string, subject: string, message: string): void {
+  const from = process.env.MAIL ?? ''
+  trasnsporter.sendMail({ from, to, subject, text: message }, (error: any, info: any) => {
+    if (error !== undefined && error !== null) {
+      logger.error({
+        function: 'nodemailer.service', error
+      })
+    } else logger.info({ function: 'nodemailer.service', info })
+  }
+  )
+}

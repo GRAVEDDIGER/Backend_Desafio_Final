@@ -47,6 +47,9 @@ app.use('/carts', cartRouter)
 app.use('/sales', salesRouter)
 app.use('/chat', chatRouter)
 app.use('/auth', authRoutes)
+app.get('/config', (req: Request, res: Response) => {
+  res.render('configuration', { ...process.env })
+})
 app.get('/', (_req: Request, res: Response) => {
   res.redirect('/products')
 })

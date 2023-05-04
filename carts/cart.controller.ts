@@ -147,11 +147,24 @@ export class CartController {
         })
     },
     public cartById = (req: Request, res: Response) => {
-      const { id } = req.params
+      let { id } = req.params
+      if (id === undefined) {
+        if (req.user !== undefined && 'Carts' in req.user) {
+          id = req.user.Carts as string
+        } else { res.render('inexistentCart') }
+      }
+      if (id === undefined || id === null) res.redirect('/products')
+      console.log(id)
       this.cartService.cartById(id)
         .then((response: IResponse) => {
-          if (response.ok) res.render('cart', { products: response.response.products, cartId: id })
-          else res.status(404).send(response)
+          const products: Prisma.ProductTypeCreateInput[] = response.response.products as Prisma.ProductTypeCreateInput[]
+          const price: number = products.reduce((previous, current): number => {
+            const price: number = current.price
+            const quantity: number = current.quantity
+            return previous + (price * quantity)
+          }, 0)
+          if (response.ok) res.render('cart', { products: response.response.products, cartId: id, priceWithoutTaxes: price, priceWithTaxes: (price * 0.21) + price })
+          else res.render('inexistentCart')
         })
         .catch((error: any) => {
           logger.error({

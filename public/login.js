@@ -13,6 +13,9 @@ if (form1 !== null) {
         console.log(response)
         window.location.href = response.url
       }
+      response.json().then(data => {
+        if (!data.ok) window.location.href = data.url
+      })
     }).catch(error => console.log(error))
   })
 }

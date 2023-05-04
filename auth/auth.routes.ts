@@ -1,22 +1,18 @@
 import { type Response, Router, type Request } from 'express'
 import passport from 'passport'
-
 import { AuthController } from './auth.controller'
-import { sendMail } from '../nodemailer/nodemailer.service'
-
+import { userValidation } from '../users/users.validator'
+import { loginValidation } from './login.validator'
 export const authRoutes = Router()
 const authController = new AuthController()
 /*
 * LOGIN ROUTES
 */
-authRoutes.post('/login',
+authRoutes.post('/login', loginValidation,
   passport.authenticate('login', { failureRedirect: '/auth/loginfailed' }),
   authController.jwtIssuance,
-  (req: Request, res: Response) => {
+  (_req: Request, _res: Response) => {
     console.log('post done')
-    // res.redirect('/products')
-
-    // res.render('showproducts')
   })
 
 authRoutes.get('/login', (req: Request, res: Response) => {
@@ -24,18 +20,33 @@ authRoutes.get('/login', (req: Request, res: Response) => {
   res.render('login')
 })
 authRoutes.get('/loginfailed', (req: Request, res: Response) => {
-  const message = req.flash()
-  console.log(message)
-  res.render('login', { isError: true, message })
+  const errors = req.flash()
+  console.log(errors, errors.length, req.flash())
+  if ('errors' in errors) {
+    res.render('loginvalidationerror', { errors: errors.errors })
+  } else {
+    res.render('login', { isError: true, message: errors.error })
+  }
 })
+// if (errors.length === 0) res.render('loginvalidationerror', { errors })
+// else {
+//   const message = req.flash('error')
+//   console.log(message)
+//   res.render('login', { isError: true, message })
+// }
+
 /*
 * SIGN UP ROUTES
 */
-authRoutes.post('/signup', passport.authenticate('register'), authController.jwtIssuance, (req: Request, res: Response) => {
-  if ('user' in req && req.user !== undefined && 'username' in req.user && req.user.username !== undefined && req.user.username !== null) { sendMail('User created', `User ${req.user.username as string}`) }
-  console.log('registred', req.isAuthenticated())
-  res.status(201).send('Autorized')
-})
-authRoutes.get('/signup', (req: Request, res: Response) => {
+authRoutes.post('/signup', userValidation, passport.authenticate('register'), authController.jwtIssuance)
+authRoutes.get('/signup', (_req: Request, res: Response) => {
   res.render('register')
+})
+authRoutes.get('/signupfailed', authController.errorHandler)
+/*
+* Logout
+*/
+authRoutes.get('/logout', (_req: Request, res: Response) => {
+  res.clearCookie('jwt')
+  res.redirect('/auth/login')
 })

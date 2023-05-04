@@ -1,0 +1,36 @@
+<script src="socket.io/socket.io.js"></script>
+<form id="messageForm" action="#" class="userData">
+
+  <h2>Bienvenido al chat {{name}}!!!</h2>
+  <section class="chatBox" id="chatBox">
+  </section>
+  <div class="messageBoxCombo">
+    <input type="text" name="messageBox" id="messageBox" class="msgBoxClass" placeholder="Write your message" />
+    <button class="sendMessageButton">send</button>
+  </div>
+</form>
+<template id="chatBubble">
+  <div class="outside">
+<div class="bubble">
+  <div class="userInfo"></div>
+  <div class="message"></div>
+</div>
+</div>
+</template>
+<script src="chat.js"></script>
+
+
+
+{{!-- 
+<script src="socket.io/socket.io.js"></script>
+
+
+<section>
+    <h2>Chat</h2>
+    <article class="chatBox">
+
+    </article>
+    <div class="messageContainer"><span><input id="chatInput" type="text"><button id="sendButton">Send</button></span></div>
+</section>
+
+<script src="/chat.js"></script> --}}
